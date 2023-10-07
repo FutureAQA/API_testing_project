@@ -2,6 +2,10 @@ import requests
 
 
 def test_example():
-    url = "https://send-request.me/api/users/?limit=3&offset=0"
-    response = requests.get(url)
+    url = "https://serverest.dev/login"
+    data = {
+      "email": "fulano@qa.com",
+      "password": "teste"
+}
+    response = requests.post(url, json=data)
     print(response.json())
