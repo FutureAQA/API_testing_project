@@ -1,7 +1,8 @@
 from typing import Optional
 import validators
 
-from pydantic import BaseModel, ValidationError, field_validator, PositiveInt, root_validator, validator
+from pydantic import BaseModel, ValidationError, field_validator, PositiveInt, root_validator, Extra
+from pydantic.v1 import validator
 from pydantic_core.core_schema import ValidationInfo
 
 
@@ -12,7 +13,7 @@ class Tags(BaseModel):
 
 class Category(BaseModel):
     id: int = 0
-    name: str
+    name: Optional[str]
 
 
 class Pets(BaseModel):
@@ -43,8 +44,7 @@ data = """
 {
     "id": 1,
     "category": {
-        "id": 2,
-        "name": "Masha"
+        "id": 2
     },
     "name": "doggie",
         "photoUrls": ["https://hello.com", "https://world.ru"],
