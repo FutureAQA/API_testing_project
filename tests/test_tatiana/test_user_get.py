@@ -31,3 +31,9 @@ class Test_users_get:
         url_get_negative = f"https://petstore.swagger.io/v2/user/{a}"
         response = requests.get(url_get_negative)
         assert response.status_code == 404, "Wrong status code"
+
+
+    def test_get_users_by_empty_username(self):
+        url_get = f'https://petstore.swagger.io/v2/user/'
+        response_get = requests.get(url_get)
+        assert response_get.status_code == 405, "Wrong status code"
