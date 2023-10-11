@@ -24,8 +24,7 @@ class TestGetPet:
             self.url.BY_STATUS,
             status
         )
-        assert response.status_code == self.status_code.OK, \
-            f"Unexpected status code. Expected: {expected_status_code}. Actual: {actual_status_code}"
+        assert response.status_code == self.status_code.OK, f"Unexpected status code."
 
     @pytest.mark.parametrize("status", get_pet_by_status)
     def test_get_pet_by_status_response_is_json_type(self, status):
@@ -47,6 +46,5 @@ class TestGetPet:
             self.url.BY_STATUS,
             data=data
         )
-        assert response.status_code == self.status_code.OK, \
-            f"Unexpected status code. Expected: {expected_status_code}. Actual: {actual_status_code}"
+        assert response.status_code == self.status_code.OK, f"Unexpected status code."
         assert response.json() == []
