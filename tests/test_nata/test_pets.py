@@ -34,5 +34,5 @@ class TestPet:
     @allure.title('put_update_an_existing_pet')
     def test_put_update_an_existing_pet(self, add_new_pet):
         url = PET_URL
-        response = requests.post(url, json=UPDATE_PET)
+        response = requests.put(url, json=UPDATE_PET)
         assert response.status_code == 200, "Wrong status code"
