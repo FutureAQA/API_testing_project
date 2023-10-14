@@ -6,7 +6,7 @@ from tests.test_tatiana.data.data import *
 class Test_user_delate:
     def test_delate_user_by_user_name_positive(self):
         url_post = f'{Urls.BASE_URL}{Urls.CREATE_USER}'
-        response_post = requests.post(url_post, json=data_user)
+        requests.post(url_post, json=data_user)
         url_delate = f'{Urls.BASE_URL}{Urls.USER}{username}'
         response_delate = requests.delete(url_delate)
         assert response_delate.status_code == 200, "Wrong status code"

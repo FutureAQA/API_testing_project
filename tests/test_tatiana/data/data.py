@@ -12,8 +12,16 @@ data_user = [
         'password': '123'
     }
 ]
+data_user_put = {
+        'id': 3434,
+        'username': 'Wendy5656',
+        'firstName': 'Wendy5656',
+        'lastName': 'Wendy5656',
+        'email': 'Wendy5656@we',
+        'password': '12345'
+    }
 username = data_user[0]['username']
-
+username_put = data_user_put['username']
 
 def generate_random_string(length=9):
     letters = string.ascii_lowercase
