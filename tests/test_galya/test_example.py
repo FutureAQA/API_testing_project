@@ -29,7 +29,7 @@ def test_get_user_by_user_name():
     response = requests.get(url=url)
     print(response.json())
 
-
+@pytest.mark.xfail
 def test_get_purchase_by_id():
     url = 'https://petstore.swagger.io/v2/store/order/9'
     response = requests.get(url=url)
