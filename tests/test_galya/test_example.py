@@ -16,6 +16,7 @@ def test_get_find_pets_by_status_sold():
     print(response.json())
 
 
+@pytest.mark.xfail
 def test_get_find_pets_by_id():
     url = 'https://petstore.swagger.io/v2/pet/12'
     response = requests.get(url=url)
