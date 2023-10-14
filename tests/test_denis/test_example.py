@@ -1,5 +1,5 @@
 import os
-
+import allure
 import pytest
 import requests
 from src.utils.logger.logger import get_logs
