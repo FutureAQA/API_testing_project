@@ -1,18 +1,18 @@
-import os
-import allure
-import pytest
-import requests
 from src.utils.logger.logger import get_logs
+from src.utils.assertions import Assertion
 from src.utils.http_methods import MyRequests
 
 logger = get_logs("tests/test_denis/test_example")
-request = MyRequests()
 
 
-def test_example():
-    url = "/pet/100"
-    # response = requests.get(url=url)
-    response = request.get(url=url)
-    logger.error(response.json())
-    print(response.json())
-    # assert response.status_code == 404
+class TestGetPets:
+    assertions = Assertion()
+    request = MyRequests()
+
+    def test_example(self):
+        pet_id = 100
+        url = f"/pet/{pet_id}"
+        response = self.request.get(url=url)
+        logger.error(response.json())
+        print(response.json())
+        self.assertions.assert_status_code(response, 200)

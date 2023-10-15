@@ -1,7 +1,5 @@
 import requests
 from data.urls import Urls
-import requests
-from data.urls import Urls
 from src.utils.logger.another_logger import Logger
 
 

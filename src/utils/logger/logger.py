@@ -1,5 +1,4 @@
 import logging
-import datetime
 import os
 from logging.handlers import RotatingFileHandler
 from pages.base_page import BasePage
@@ -18,7 +17,7 @@ def create_logs_dir():
 
 def get_logs(name):
     log_file = create_logs_dir()
-    max_byte = 5 * 1024 * 1024
+    max_byte = 1 * 1024 * 1024
 
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)

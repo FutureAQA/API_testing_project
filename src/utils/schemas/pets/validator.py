@@ -1,14 +1,17 @@
+import json
 from typing import Optional
 import validators
 
-from pydantic import BaseModel, ValidationError, field_validator, PositiveInt, root_validator, Extra
-from pydantic.v1 import validator
-from pydantic_core.core_schema import ValidationInfo
+from pydantic import BaseModel, ValidationError, field_validator
 
 
 class Tags(BaseModel):
-    id: PositiveInt
-    name: str
+    id: int = 0
+    name: Optional[str]
+
+
+class TagsId(BaseModel):
+    id: int = 0
 
 
 class Category(BaseModel):
@@ -16,19 +19,23 @@ class Category(BaseModel):
     name: Optional[str]
 
 
+class CategoryId(BaseModel):
+    id: int = 0
+
+
 class Pets(BaseModel):
-    id: PositiveInt
+    id: int
     name: str
-    category: Category
+    category: Category | CategoryId = None
     photoUrls: Optional[list[str]] = []
-    tags: list[Tags]
+    tags: list[Tags | TagsId] = []
     status: str
 
     @field_validator("photoUrls")
     @classmethod
     def check_photo_urls(cls, v: list[str]) -> list[str]:
         for url in v:
-            if not validators.url(url):
+            if not (validators.url(url) or url.startswith("data:image")):
                 raise ValueError("photoUrls must be a list of urls or empty")
         return v
 
@@ -43,30 +50,27 @@ class Pets(BaseModel):
 data = """
 {
     "id": 1,
-    "category": {
-        "id": 2
-    },
+  
     "name": "doggie",
         "photoUrls": ["https://hello.com", "https://world.ru"],
     "tags": [
-        {
-            "id": 2,
-            "name": "name"
-        },
-        {
-            "id": 3,
-            "name": "name"
-        }
     ],
     "status": "sold"
 }
 """
+
 try:
     pets = Pets.model_validate_json(data)
-    print(pets.model_dump_json())
+    if "category" not in pets.model_dump():
+        print(pets.model_dump_json(exclude_unset=True))
+    else:
+        print(pets.model_dump_json())
+
 except ValidationError as e:
     print("Error")
     print(e.json())
 
 # "https://hello.com",
 # "https://world.ru"
+
+
