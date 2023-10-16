@@ -1,4 +1,4 @@
-from src.utils.logger.logger import get_logs
+from src.logger.logger import get_logs
 from src.utils.assertions import Assertion
 from src.utils.http_methods import MyRequests
 

@@ -1,17 +1,27 @@
 from datetime import datetime
+from enum import Enum
 from typing import Optional
-import validators
-import re
 from pydantic import BaseModel, ValidationError, field_validator
+
+
+class GetComplete(Enum):
+    true = True
+    false = False
+
+
+class GetStatus(Enum):
+    placed = "placed"
+    approved = "approved"
+    delivered = "delivered"
 
 
 class Store(BaseModel):
     id: Optional[int] = 0
     petId: Optional[int] = 0
     quantity: Optional[int] = 0
-    shipDate: str = None
-    status: str
-    complete: bool
+    shipDate: Optional[str] = None
+    status: GetStatus
+    complete: GetComplete
 
     @field_validator("id", "petId", "quantity")
     @classmethod
@@ -25,29 +35,31 @@ class Store(BaseModel):
     @field_validator('shipDate')
     @classmethod
     def validate_time_format(cls, value):
-        pattern = r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z'
-        if not re.fullmatch(pattern, value):
-            raise ValueError("Неверный формат времени")
+        # pattern = r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z'
+        # if not re.fullmatch(pattern, value):
+        #     raise ValueError("Неверный формат времени")
         try:
             datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%fZ")
         except ValueError:
             raise ValueError("Неверный формат времени")
-
         return value
 
 
 data = """{
-  
+  "id": 0,
   "petId": 0,
   "quantity": 0,
-  
-  "status": "placed1",
+  "shipDate": "2023-10-15T13:27:05.244Z",
+  "status": "delivered",
   "complete": true
 }"""
 
 try:
-    pets = Store.model_validate_json(data)
-    print(pets.model_dump_json())
+    store = Store.model_validate_json(data)
+    if store.model_dump()["shipDate"] is None:
+        print(store.model_dump(exclude_unset=True))
+    else:
+        print(store.model_dump())
 
 except ValidationError as e:
     print("Error")

@@ -1,6 +1,6 @@
 import requests
 from data.urls import Urls
-from src.utils.logger.another_logger import Logger
+from src.logger.another_logger import Logger
 
 
 class MyRequests:

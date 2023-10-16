@@ -1,10 +1,10 @@
 import json
 from typing import Optional
 import validators
-
+from src.utils.schemas.basic_validator import BasicValidator
 from pydantic import BaseModel, ValidationError, field_validator
 
-
+validator = BasicValidator()
 class Tags(BaseModel):
     id: int = 0
     name: Optional[str]
@@ -24,9 +24,9 @@ class CategoryId(BaseModel):
 
 
 class Pets(BaseModel):
-    id: int
+    id: Optional[int]
     name: str
-    category: Category | CategoryId = None
+    category: (Category | CategoryId) = None
     photoUrls: Optional[list[str]] = []
     tags: list[Tags | TagsId] = []
     status: str
@@ -42,18 +42,25 @@ class Pets(BaseModel):
     @field_validator("status")
     @classmethod
     def check_status(cls, v: str) -> str:
-        if v in ["available", "pending", "sold"]:
-            return v
-        raise ValueError(f"Your status is {v}. Status must be available, pending or sold")
+        if not validator.is_valid_status(v):
+            raise ValueError(f"Invalid status: {v}. Status must be available, pending, or sold.")
+        return v
 
 
 data = """
 {
     "id": 1,
-  
+    "category": {
+        "id": 0,
+        "name": "string"
+  },
     "name": "doggie",
         "photoUrls": ["https://hello.com", "https://world.ru"],
     "tags": [
+          {
+      "id": 0,
+      "name": "string"
+        }
     ],
     "status": "sold"
 }
@@ -61,10 +68,10 @@ data = """
 
 try:
     pets = Pets.model_validate_json(data)
-    if "category" not in pets.model_dump():
-        print(pets.model_dump_json(exclude_unset=True))
+    if pets.model_dump()["category"] is None:
+        print(pets.model_dump(exclude_unset=True))
     else:
-        print(pets.model_dump_json())
+        print(pets.model_dump())
 
 except ValidationError as e:
     print("Error")
