@@ -39,7 +39,7 @@
 4. When the virtual environment is activated, you will notice a change in the command line (or terminal) prompt. Typically, the name of the virtual environment will appear at the beginning of the prompt, indicating that you are inside an activated virtual environment.
 
     For instance, if you are using the Command Prompt in Windows, upon activating the virtual environment, you will observe a modification in the prompt:
-: (venv) Your\Project\Path>
+: **(venv) Your\Project\Path>**
 
 - Run command **pip install -r requirements.txt**
 - After, execute **pytest -s -v** to run tests.
