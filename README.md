@@ -32,18 +32,20 @@
         Close the settings window.
 2. Creating a virtual environment using the terminal:
 
-In the project root, open the terminal and enter the command `python -m venv venv`
+    In the project root, open the terminal and enter the command `python -m venv venv`
+
 3. To activate the virtual environment, enter the following command in the terminal: `.\venv\Scripts\activate`.
+   
 4. When the virtual environment is activated, you will notice a change in the command line (or terminal) prompt. Typically, the name of the virtual environment will appear at the beginning of the prompt, indicating that you are inside an activated virtual environment.
 
-For instance, if you are using the Command Prompt in Windows, upon activating the virtual environment, you will observe a modification in the prompt:
+    For instance, if you are using the Command Prompt in Windows, upon activating the virtual environment, you will observe a modification in the prompt:
 : (venv) Your\Project\Path>
 
 - Run command **pip install -r requirements.txt**
 - After, execute **pytest -s -v** to run tests.
 
 
-To run a Docker container using the provided Dockerfile, follow these steps:
+**To run a Docker container using the provided Dockerfile, follow these steps:**
 
     Ensure Docker is Installed:
         Install Docker on your computer if it's not already installed.
