@@ -1,4 +1,7 @@
-import json
+"""
+This module contains the schemas for the Pets API
+"""
+
 from typing import Optional
 import validators
 from src.utils.schemas.basic_validator import BasicValidator
