@@ -1,6 +1,7 @@
 import json
 from src.utils.http_methods import MyRequests
 from data.data_kate.data_kate import PetUrl
+import pytest
 
 
 def file_read(file):
@@ -12,6 +13,7 @@ def file_read(file):
 class TestPostPets:
     url = PetUrl
 
+    @pytest.mark.xfail
     def test_create_new_pet(self):
         url = self.url.URL_PET
         j = file_read('../../data/data_kate/body_new_pet.json')

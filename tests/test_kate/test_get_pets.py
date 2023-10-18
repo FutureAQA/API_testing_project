@@ -6,12 +6,12 @@ from src.utils.http_methods import MyRequests
 
 class TestsGetPets:
     url = PetUrl
+
     @pytest.mark.parametrize("status", AllData.PETS_STATUS)
     def test_get_pets_is_json(self, status):
         url = self.url.URL_PET_STATUS
         response = MyRequests().get(url, status)
         assert 'application/json' in response.headers.get('Content-Type', '')
-
 
     @pytest.mark.parametrize("status", AllData.PETS_STATUS)
     def test_get_pets_by_status(self, status):
