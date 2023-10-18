@@ -19,4 +19,4 @@ class StoreValidator(Store):
                 store.model_dump()
 
         except ValidationError as e:
-            logger.error(f"Invalid date format {e.json()}")
+            logger.error(f"Invalid data format {e.json()}")

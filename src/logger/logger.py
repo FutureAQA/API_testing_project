@@ -18,7 +18,6 @@ def create_logs_dir():
 def get_logs(name):
     log_file = create_logs_dir()
     max_byte = 1 * 1024 * 1024
-
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
     formatter = logging.Formatter(

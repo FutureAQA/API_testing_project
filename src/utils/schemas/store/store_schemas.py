@@ -4,7 +4,7 @@ from typing import Optional
 from pydantic import BaseModel, field_validator
 from src.logger.logger import get_logs
 
-logger = get_logs("utils/schemas/store/store_schemas")
+logger = get_logs("utils\schemas\store\store_schemas")
 
 
 class GetComplete(Enum):

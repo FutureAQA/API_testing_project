@@ -56,5 +56,5 @@ class CreateStore:
         if complete_value:
             data["complete"] = complete_value["complete"]
 
-        logger.info(data)
+        logger.info(f"Request data: {data}")
         return data

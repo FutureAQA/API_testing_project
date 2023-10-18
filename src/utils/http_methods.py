@@ -1,6 +1,9 @@
 import requests
 from data.urls import Urls
 from src.logger.another_logger import Logger
+from src.logger.logger import get_logs
+
+logger = get_logs(r"src\utils\http_methods.py")
 
 
 class MyRequests:
@@ -43,5 +46,6 @@ class MyRequests:
             raise Exception(f"""Bad method '{method}' was received""")
 
         Logger.add_response(response)
+        logger.info(f"Response data: {data}")
 
         return response

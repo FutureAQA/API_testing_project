@@ -2,6 +2,8 @@ from pages.store_page_denis.store_page_denis import StorePage
 from src.utils.assertions import Assertion
 from data.status_code import StatusCode
 import allure
+
+
 # @pysnooper.snoop()
 
 @allure.epic("Testing Store")
@@ -18,4 +20,3 @@ class TestCreateStore:
         """
         response = self.store_page.create_store_with_valid_data()
         self.assertions.assert_status_code(response, self.status_code.STATUS_OK)
-
