@@ -21,7 +21,7 @@ class StorePage:
             uid=store.uid,
             pet_id=store.pet_id,
             quantity=store.quantity,
-            ship_date="store.ship_date",
+            ship_date=store.ship_date,
             status=store.status,
             complete=store.complete)
         response = self.request.post(url=url, data=data)

@@ -1,4 +1,4 @@
-from pages.store_page.store_page import StorePage
+from pages.store_page_denis.store_page_denis import StorePage
 from src.utils.assertions import Assertion
 from data.status_code import StatusCode
 import allure
