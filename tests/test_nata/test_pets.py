@@ -14,7 +14,8 @@ class TestPet:
     def test_get_finds_pets_by_status(self, status):
         url = f'{PET_URL}{FIND_BY_STATUS}{status}'
         response = requests.get(url=url)
-        assert response.status_code == self.status_code.STATUS_OK, "Wrong status code"
+        assert response.status_code == self.status_code.STATUS_OK, \
+            f"Expected status {self.status_code.STATUS_OK}, actual status {response.status_code}"
 
     @allure.title("post_add_a_new_pet_to_the_store")
     def test_post_add_a_new_pet_to_the_store(self, add_new_pet):
