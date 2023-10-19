@@ -4,3 +4,4 @@ allure-pytest==2.13.2
 allure-python-commons==2.13.2
 requests==2.31.0
 Faker==19.6.2
+pydantic==2.4.2
