@@ -1,0 +1,18 @@
+{
+        "id": 135,
+        "category": {
+            "id": 135,
+            "name": "Frog"
+        },
+        "name": "white",
+        "photoUrls": [
+            "https://irko-ingur.ru/thumb/2/CjW1zeDt5rlzue4SyUFFMQ/r/d/iork.jpg"
+        ],
+        "tags": [
+            {
+                "id": 135,
+                "name": "Eazy"
+            }
+        ],
+        "status": "available"
+}
