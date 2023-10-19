@@ -32,6 +32,13 @@ jobs:
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-      - name: Test with pytest
+      - name: Get Pytest changed files
+        id: changed-py-files
+        uses: tj-actions/changed-files@v23
+        with:
+          files: |
+            **/*.py
+      - name: Run Pytest on changed files
+        if: steps.changed-py-files.outputs.any_changed == 'true'
         run: |
-          pytest -sv
+          pytest -s -v ${{ steps.changed-py-files.outputs.all_changed_files }}
