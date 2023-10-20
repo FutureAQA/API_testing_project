@@ -2,8 +2,43 @@
 
 import pytest
 import random
-from tests.test_vera.data.data_pets import random_status, pet_names, get_breed
+from tests.test_vera.data.data_pets import random_status, pet_names
+from tests.test_vera.generator.generator import Pet, get_breed
 
+@pytest.fixture
+def schema():
+    return {
+        "id": 10,
+        "name": "doggie",
+        "category": {
+            "id": 1,
+            "name": "Dogs"
+        },
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+              "id": 0,
+              "name": "string"
+            }
+        ],
+        "status": "available"
+    }
+
+@pytest.fixture
+def headers():
+    return {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+        }
+
+@pytest.fixture
+def headers_xml():
+    return {
+            "accept": "application/xml",
+            "Content-Type": "application/json"
+        }
 
 
 @pytest.fixture

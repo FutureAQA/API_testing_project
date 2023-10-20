@@ -1,5 +1,6 @@
 """This module stores test data for testing pets."""
 import random
+# from tests.test_vera.generator.generator import generated_pet
 
 
 get_pet_by_status = [{"status": "available"},
@@ -16,6 +17,15 @@ expected_non_exist_pet_keys = [
     ("type", "error", "Response JSON doesn't have key 'type'"),
     ("message", "Pet not found", "Response JSON doesn't have key 'message'")
 ]
+
+expected_pet_error_msg = {
+     "not found": "Pet not found",
+     "deleted": "Pet deleted",
+     "404 message": "HTTP 404 Not Found",
+     "400 message": 'Input error: query parameter `status value `invalid_status` is '
+               'not in the allowable values `[available, pending, sold]`'
+}
+
 
 dog_breeds = [
         "Labrador Retriever", "German Shepherd", "Golden Retriever", "Bulldog", "Poodle", "Beagle",
@@ -35,6 +45,3 @@ cat_breeds = [
     ]
 
 
-def get_breed():
-    all_breed = dog_breeds + cat_breeds
-    return random.choice(all_breed)
