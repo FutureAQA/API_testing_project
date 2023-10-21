@@ -28,12 +28,18 @@ class TestPet:
         assert response.status_code == self.status_code.STATUS_OK, \
             f"Expected status {self.status_code.STATUS_OK}, actual status {response.status_code}"
 
-    @pytest.mark.xfail(reason="Undocumented status code")
+    @pytest.mark.xfail(reason="only local")
     @allure.title("post_uploads_an_image_pet")
     def test_post_uploads_an_image_pet(self, add_new_pet):
         url = f'{PET_URL}777/uploadImage'
-        response = requests.post(url)
-        print(response.text)
+        payload = {'additionalMetadata': 'image.jpg'}
+        files = [
+            ('file', ('Smoke.jpg',
+                      open('Smoke.jpg', 'rb'),
+                      'image/jpeg'))
+        ]
+        headers = {}
+        response = requests.post(url, headers=headers, data=payload, files=files)
         assert response.status_code == self.status_code.STATUS_OK, \
             f"Expected status {self.status_code.STATUS_OK}, actual status {response.status_code}"
 
