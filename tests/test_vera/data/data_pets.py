@@ -1,6 +1,5 @@
 """This module stores test data for testing pets."""
 import random
-# from tests.test_vera.generator.generator import generated_pet
 
 
 get_pet_by_status = [{"status": "available"},
@@ -11,6 +10,8 @@ get_pet_by_status = [{"status": "available"},
 random_status = random.choice(get_pet_by_status)["status"]
 
 pet_names = ["Buddy", "Max", "Lucy", "Daisy", "Charlie", "Luna", "Milo", "Sadie", "Toby", "Bailey"]
+
+expected_pet_keys = ['id', 'category', 'name', 'photoUrls', 'tags', 'status']
 
 expected_non_exist_pet_keys = [
     ("code", 1, "Response JSON doesn't have key 'code'"),
