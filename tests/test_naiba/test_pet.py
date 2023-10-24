@@ -7,8 +7,8 @@ status_ok = 200
 
 def test_can_call_endpoint():
     response = requests.get(url)
-    assert response.status_code == 200
-    pass 
+    assert response.status_code == status_ok
+    pass  
 
 @allure_commons.title("test_get_pets_by_status")
 def test_get_pets_by_status():

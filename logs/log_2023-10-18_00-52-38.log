@@ -1,0 +1,16 @@
+
+----------------------------------------------------------------------------------------------------
+Test: tests/test_denis/test_example.py::test_example (call)
+Time: 2023-10-18 00:52:40.187697
+Request method: GET
+Request url: https://petstore.swagger.io/v2/pet/100
+Request data: None
+Request headers: {'Content-Type': 'application/json'}
+Request cookies: {}
+
+Response code: 404
+Response text: {"code":1,"type":"error","message":"Pet not found"}
+Response headers: {'Date': 'Wed, 18 Oct 2023 07:52:40 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+----------------------------------------------------------------------------------------------------
