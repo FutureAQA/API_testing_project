@@ -1,8 +1,6 @@
 import allure
 from src.utils.http_methods import MyRequests
 from data.data_kate.data_kate import PetUrl
-import pytest
-import json
 from tests.test_kate.utils import file_read
 
 
