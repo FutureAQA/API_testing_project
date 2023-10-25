@@ -1,6 +1,5 @@
 import pytest
 import requests
-
 from data.data_kate.data_kate import AllData
 from data.data_kate.data_kate import PetUrl
 from src.utils.http_methods import MyRequests
