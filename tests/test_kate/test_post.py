@@ -11,7 +11,7 @@ class TestPostPets:
     @allure.title("test_create_new_pet")
     def test_create_new_pet(self):
         url = self.url.URL_PET
-        j = file_read('../../data/data_kate/body_new_pet.json')
+        j = file_read('data/data_kate/body_new_pet.json')
         response = MyRequests().post(url, data=j)
         print(response.json())
         assert response.status_code == 200, "Status_code is not 200"
