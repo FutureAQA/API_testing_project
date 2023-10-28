@@ -25,6 +25,5 @@ class TestDeletePets:
     def test_delete_deleted_pet(self):
         url = f'{self.url.BASE_URL}{self.url.URL_PET}/13876545'
         response = requests.delete(url)
-        print(response.text)
         assert response.status_code == 404, f'Status code is not 404, status code is {response.status_code}'
 
