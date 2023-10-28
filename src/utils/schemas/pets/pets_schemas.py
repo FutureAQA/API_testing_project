@@ -8,6 +8,8 @@ from src.utils.schemas.basic_validator import BasicValidator
 from pydantic import BaseModel, ValidationError, field_validator
 
 validator = BasicValidator()
+
+
 class Tags(BaseModel):
     id: int = 0
     name: Optional[str]
@@ -82,5 +84,3 @@ except ValidationError as e:
 
 # "https://hello.com",
 # "https://world.ru"
-
-
