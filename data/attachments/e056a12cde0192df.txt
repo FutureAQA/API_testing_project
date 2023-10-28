@@ -1,0 +1,2 @@
+INFO     src\utils\http_methods.py:http_methods.py:49 Response data: None
+ERROR    tests/test_denis/test_example:test_example.py:16 {'code': 404, 'message': 'HTTP 404 Not Found'}

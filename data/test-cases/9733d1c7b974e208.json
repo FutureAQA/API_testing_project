@@ -1,0 +1,71 @@
+{
+  "uid" : "9733d1c7b974e208",
+  "name" : "test_get_users_by_username_positive",
+  "fullName" : "tests.test_tatiana.test_users.test_user_get.Test_users_get#test_get_users_by_username_positive",
+  "historyId" : "0324789cce591f82c3392232ed433ed3",
+  "time" : {
+    "start" : 1698522566720,
+    "stop" : 1698522567483,
+    "duration" : 763
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698522549938,
+      "stop" : 1698522549954,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.test_tatiana.test_users"
+  }, {
+    "name" : "suite",
+    "value" : "test_user_get"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_users_get"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1111-504"
+  }, {
+    "name" : "thread",
+    "value" : "2191-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_tatiana.test_users.test_user_get"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9733d1c7b974e208.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'status_code'",
+      "children" : [ {
+        "name" : "Create store with valid data has status code 200",
+        "uid" : "8ff6b67703daec67",
+        "parentUid" : "7a38ce2d24faa1d3962a0a7ed03971a4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1698522551144,
+          "stop" : 1698522551678,
+          "duration" : 534
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7a38ce2d24faa1d3962a0a7ed03971a4"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
