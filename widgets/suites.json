@@ -1,6 +1,17 @@
 {
-  "total" : 12,
+  "total" : 13,
   "items" : [ {
+    "uid" : "e2552634b7b2ae09e788de4b88edee4e",
+    "name" : "tests.test_denis.test_pets",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
     "uid" : "dd263df708baa1ec0e3ae865982827f5",
     "name" : "tests.test_denis.test_store",
     "statistic" : {
@@ -12,6 +23,17 @@
       "total" : 1
     }
   }, {
+    "uid" : "9b17c886bff65a7bffd20967ea7b3d8f",
+    "name" : "tests.test_kate",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 19,
+      "unknown" : 0,
+      "total" : 19
+    }
+  }, {
     "uid" : "97d956b9bf3a320d62b2e6bbdc05ae0e",
     "name" : "tests.test_vera",
     "statistic" : {
@@ -21,17 +43,6 @@
       "passed" : 18,
       "unknown" : 0,
       "total" : 18
-    }
-  }, {
-    "uid" : "9b17c886bff65a7bffd20967ea7b3d8f",
-    "name" : "tests.test_kate",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 11,
-      "unknown" : 0,
-      "total" : 11
     }
   }, {
     "uid" : "769a28585fbeb8a9feb5db66b0d26c18",
@@ -98,17 +109,6 @@
       "passed" : 2,
       "unknown" : 0,
       "total" : 2
-    }
-  }, {
-    "uid" : "6412a579623e563835c9a959703238a1",
-    "name" : "tests.test_denis",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
     }
   } ]
 }

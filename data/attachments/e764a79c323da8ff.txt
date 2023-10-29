@@ -1,0 +1,1 @@
+INFO     src\utils\http_methods.py:http_methods.py:49 Response data: {'id': 13876545, 'category': {'id': 135111, 'name': 'Dog'}, 'name': 'white', 'photoUrls': ['https://irko-ingur.ru/thumb/2/CjW1zeDt5rlzue4SyUFFMQ/r/d/iork.jpg'], 'tags': [{'id': 135, 'name': 'Eazy'}], 'status': 'available'}

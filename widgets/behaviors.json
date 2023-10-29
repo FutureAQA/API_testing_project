@@ -1,8 +1,19 @@
 {
-  "total" : 32,
+  "total" : 33,
   "items" : [ {
-    "uid" : "09ba2bc065b3d37e391404682c0e0d14",
-    "name" : "Testing Store",
+    "uid" : "0784e503b40eace0e9a109a77b08d462",
+    "name" : "Testing Create The Pets",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "50f0e7b1096542aa37e00212cdac85f7",
+    "name" : "Testing Create a Store",
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -23,6 +34,17 @@
       "total" : 13
     }
   }, {
+    "uid" : "b063d1555d958e50ea065e886f13d967",
+    "name" : "Test get pets",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
     "uid" : "ad009136d1fcd5e68b3784e54e4051bc",
     "name" : "Test for pet",
     "statistic" : {
@@ -32,17 +54,6 @@
       "passed" : 6,
       "unknown" : 0,
       "total" : 7
-    }
-  }, {
-    "uid" : "b063d1555d958e50ea065e886f13d967",
-    "name" : "Test get pets",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 6,
-      "unknown" : 0,
-      "total" : 6
     }
   }, {
     "uid" : "24e478ab2c9b48fec7d796c4d3358439",
@@ -73,9 +84,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   }, {
     "uid" : "dfca5f7749097298be8c3df0cd477209",
@@ -84,9 +95,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   } ]
 }
