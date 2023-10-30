@@ -1,0 +1,1 @@
+INFO     src\utils\http_methods.py:http_methods.py:49 Response data: {'name': 'Luna', 'photoUrls': ['https://example.com/image1.jpg'], 'id': '9223372016900023952', 'category': {'id': 41651235, 'name': 'Norwegian Forest'}, 'tags': [{'id': 718318, 'name': 'Cornish Rex'}, {'id': 24546680, 'name': 'Great Dane'}], 'status': 'available'}
