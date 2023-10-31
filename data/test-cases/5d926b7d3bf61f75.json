@@ -1,0 +1,93 @@
+{
+  "uid" : "5d926b7d3bf61f75",
+  "name" : "Get pet by invalid status > Not Found error message",
+  "fullName" : "tests.test_vera.test_pets_get.TestGetPet#test_get_pet_by_invalid_status_has_error_message",
+  "historyId" : "1f9e36a7ef1223978f0aba127ee50538",
+  "time" : {
+    "start" : 1698712185822,
+    "stop" : 1698712186109,
+    "duration" : 287
+  },
+  "description" : "\n        The test checks if the response error message is \"Not Found\"\n        :param for status: \"invalid_status\"\n        :return:  'message': 'HTTP 404 Not Found' ",
+  "descriptionHtml" : "<pre><code>    The test checks if the response error message is &quot;Not Found&quot;\n    :param for status: &quot;invalid_status&quot;\n    :return:  'message': 'HTTP 404 Not Found' \n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698712165295,
+      "stop" : 1698712165318,
+      "duration" : 23
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        The test checks if the response error message is \"Not Found\"\n        :param for status: \"invalid_status\"\n        :return:  'message': 'HTTP 404 Not Found' ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "60ef519ad670b234",
+      "name" : "log",
+      "source" : "60ef519ad670b234.txt",
+      "type" : "text/plain",
+      "size" : 97
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test GET method for pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_get"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az244-206"
+  }, {
+    "name" : "thread",
+    "value" : "2218-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_get"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5d926b7d3bf61f75.json",
+  "parameterValues" : [ ]
+}

@@ -6,12 +6,12 @@
       "name" : "AttributeError: 'StorePage' object has no attribute 'create_pet_with_valid_data'",
       "children" : [ {
         "name" : "Create pet with valid data has status code 200",
-        "uid" : "87c9a685ade4f83",
+        "uid" : "362b7b28ce01e97e",
         "parentUid" : "6be19f00352d6646e80b452b02f8d31d",
         "status" : "broken",
         "time" : {
-          "start" : 1698625768922,
-          "stop" : 1698625768922,
+          "start" : 1698712166405,
+          "stop" : 1698712166405,
           "duration" : 0
         },
         "flaky" : false,
@@ -23,13 +23,13 @@
       "name" : "AttributeError: 'NoneType' object has no attribute 'status_code'",
       "children" : [ {
         "name" : "Create store with valid data has status code 200",
-        "uid" : "bb0d2e948b8faf31",
+        "uid" : "bb19ea834a33787",
         "parentUid" : "7a38ce2d24faa1d3962a0a7ed03971a4",
         "status" : "broken",
         "time" : {
-          "start" : 1698625768952,
-          "stop" : 1698625769270,
-          "duration" : 318
+          "start" : 1698712166440,
+          "stop" : 1698712166705,
+          "duration" : 265
         },
         "flaky" : false,
         "newFailed" : false,

@@ -1,0 +1,85 @@
+{
+  "uid" : "362b7b28ce01e97e",
+  "name" : "Create pet with valid data has status code 200",
+  "fullName" : "tests.test_denis.test_pets.test_create_pets.TestCreateStore#test_create_pet_with_valid_data_has_status_code_200",
+  "historyId" : "e406e669bd1f730b5ed8df079001b480",
+  "time" : {
+    "start" : 1698712166405,
+    "stop" : 1698712166405,
+    "duration" : 0
+  },
+  "description" : "\n        This test checks if response has status code 200\n        ",
+  "descriptionHtml" : "<pre><code>    This test checks if response has status code 200\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'StorePage' object has no attribute 'create_pet_with_valid_data'",
+  "statusTrace" : "self = <tests.test_denis.test_pets.test_create_pets.TestCreateStore object at 0x7f5c5a42b710>\n\n    @allure.title(\"Create pet with valid data has status code 200\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    def test_create_pet_with_valid_data_has_status_code_200(self):\n        \"\"\"\n        This test checks if response has status code 200\n        \"\"\"\n>       response = self.store_page.create_pet_with_valid_data()\nE       AttributeError: 'StorePage' object has no attribute 'create_pet_with_valid_data'\n\ntests/test_denis/test_pets/test_create_pets.py:21: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698712165295,
+      "stop" : 1698712165318,
+      "duration" : 23
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "epic",
+    "value" : "Testing Create The Pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_denis.test_pets"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_pets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateStore"
+  }, {
+    "name" : "host",
+    "value" : "fv-az244-206"
+  }, {
+    "name" : "thread",
+    "value" : "2218-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_denis.test_pets.test_create_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "362b7b28ce01e97e.json",
+  "parameterValues" : [ ]
+}
