@@ -1,6 +1,61 @@
 {
   "total" : 33,
   "items" : [ {
+    "uid" : "b7a4493781f138e22858dc63b2e6d39d",
+    "name" : "Test GET method for pets",
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "24e478ab2c9b48fec7d796c4d3358439",
+    "name" : "POST: Add a new pet to the store",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "e43fc050f939a2cbe99e36cba351688c",
+    "name" : "Test delete pets",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "18c7611c15a1564825febc6f503f36fe",
+    "name" : "Test post pet",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "dfca5f7749097298be8c3df0cd477209",
+    "name" : "Test update pet",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
     "uid" : "0784e503b40eace0e9a109a77b08d462",
     "name" : "Testing Create The Pets",
     "statistic" : {
@@ -23,17 +78,6 @@
       "total" : 1
     }
   }, {
-    "uid" : "b7a4493781f138e22858dc63b2e6d39d",
-    "name" : "Test GET method for pets",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 13,
-      "unknown" : 0,
-      "total" : 13
-    }
-  }, {
     "uid" : "b063d1555d958e50ea065e886f13d967",
     "name" : "Test get pets",
     "statistic" : {
@@ -54,50 +98,6 @@
       "passed" : 6,
       "unknown" : 0,
       "total" : 7
-    }
-  }, {
-    "uid" : "24e478ab2c9b48fec7d796c4d3358439",
-    "name" : "POST: Add a new pet to the store",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 5,
-      "unknown" : 0,
-      "total" : 5
-    }
-  }, {
-    "uid" : "e43fc050f939a2cbe99e36cba351688c",
-    "name" : "Test delete pets",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "18c7611c15a1564825febc6f503f36fe",
-    "name" : "Test post pet",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
-      "unknown" : 0,
-      "total" : 2
-    }
-  }, {
-    "uid" : "dfca5f7749097298be8c3df0cd477209",
-    "name" : "Test update pet",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
-      "unknown" : 0,
-      "total" : 2
     }
   } ]
 }

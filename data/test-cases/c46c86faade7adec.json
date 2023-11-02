@@ -1,0 +1,131 @@
+{
+  "uid" : "c46c86faade7adec",
+  "name" : "Add a new pet > Expected pet name in response",
+  "fullName" : "tests.test_vera.test_pets_post.TestPostAddPet#test_add_pet_name_in_response",
+  "historyId" : "e7a49776fbbf1cce48f41dd600862197",
+  "time" : {
+    "start" : 1698884965916,
+    "stop" : 1698884966158,
+    "duration" : 242
+  },
+  "description" : "\n        The test checks pet's name in json response for the created pet\n        :param pet_data\n        :return: pet's name in response\n        ",
+  "descriptionHtml" : "<pre><code>    The test checks pet's name in json response for the created pet\n    :param pet_data\n    :return: pet's name in response\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: response JSON doesn't have key 'name'",
+  "statusTrace" : "self = <tests.test_vera.test_pets_post.TestPostAddPet object at 0x7f43447ea690>\nheaders = {'Content-Type': 'application/json', 'accept': 'application/json'}\npet_data = {'category': {'id': 98178256, 'name': 'Balinese'}, 'id': '9223372016900025913', 'name': 'Toby', 'photoUrls': ['https://example.com/image1.jpg'], ...}\n\n    @allure.title(\"Add a new pet > Expected pet name in response\")\n    def test_add_pet_name_in_response(self, headers, pet_data):\n        \"\"\"\n        The test checks pet's name in json response for the created pet\n        :param pet_data\n        :return: pet's name in response\n        \"\"\"\n        response = MyRequests.post(\n            self.url.PET,\n            data=pet_data,\n            headers=headers\n        )\n>       self.assertions.assert_json_value_by_name(response, \"name\", pet_data[\"name\"],\n                                                  \"Incorrect pet name in the response\")\n\ntests/test_vera/test_pets_post.py:77: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresponse = <Response [500]>, name = 'name', expected_value = 'Toby'\nerror_message = 'Incorrect pet name in the response'\n\n    @staticmethod\n    def assert_json_value_by_name(response: Response, name, expected_value, error_message):\n        try:\n            response_json = response.json()\n>           assert name in response_json, f\"\"\"response JSON doesn't have key '{name}'\"\"\"\nE           AssertionError: response JSON doesn't have key 'name'\n\nsrc/utils/assertions.py:47: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "headers",
+    "time" : {
+      "start" : 1698884965915,
+      "stop" : 1698884965915,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698884946801,
+      "stop" : 1698884946819,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "pet_data",
+    "time" : {
+      "start" : 1698884965916,
+      "stop" : 1698884965916,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        The test checks pet's name in json response for the created pet\n        :param pet_data\n        :return: pet's name in response\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: response JSON doesn't have key 'name'",
+    "statusTrace" : "self = <tests.test_vera.test_pets_post.TestPostAddPet object at 0x7f43447ea690>\nheaders = {'Content-Type': 'application/json', 'accept': 'application/json'}\npet_data = {'category': {'id': 98178256, 'name': 'Balinese'}, 'id': '9223372016900025913', 'name': 'Toby', 'photoUrls': ['https://example.com/image1.jpg'], ...}\n\n    @allure.title(\"Add a new pet > Expected pet name in response\")\n    def test_add_pet_name_in_response(self, headers, pet_data):\n        \"\"\"\n        The test checks pet's name in json response for the created pet\n        :param pet_data\n        :return: pet's name in response\n        \"\"\"\n        response = MyRequests.post(\n            self.url.PET,\n            data=pet_data,\n            headers=headers\n        )\n>       self.assertions.assert_json_value_by_name(response, \"name\", pet_data[\"name\"],\n                                                  \"Incorrect pet name in the response\")\n\ntests/test_vera/test_pets_post.py:77: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresponse = <Response [500]>, name = 'name', expected_value = 'Toby'\nerror_message = 'Incorrect pet name in the response'\n\n    @staticmethod\n    def assert_json_value_by_name(response: Response, name, expected_value, error_message):\n        try:\n            response_json = response.json()\n>           assert name in response_json, f\"\"\"response JSON doesn't have key '{name}'\"\"\"\nE           AssertionError: response JSON doesn't have key 'name'\n\nsrc/utils/assertions.py:47: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3aa86c2d6c93cf66",
+      "name" : "log",
+      "source" : "3aa86c2d6c93cf66.txt",
+      "type" : "text/plain",
+      "size" : 330
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "POST: Add a new pet to the store"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostAddPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az409-651"
+  }, {
+    "name" : "thread",
+    "value" : "2324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c46c86faade7adec.json",
+  "parameterValues" : [ ]
+}

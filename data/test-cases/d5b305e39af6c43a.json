@@ -1,0 +1,89 @@
+{
+  "uid" : "d5b305e39af6c43a",
+  "name" : "put_update_an_existing_pet",
+  "fullName" : "tests.test_nata.test_pets.TestPet#test_put_update_an_existing_pet",
+  "historyId" : "aa3b0bbc2c3fcde69b5cc7632e3049f0",
+  "time" : {
+    "start" : 1698884957214,
+    "stop" : 1698884957461,
+    "duration" : 247
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "add_new_pet",
+    "time" : {
+      "start" : 1698884956975,
+      "stop" : 1698884957213,
+      "duration" : 238
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698884946801,
+      "stop" : 1698884946819,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test for pet"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_nata"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az409-651"
+  }, {
+    "name" : "thread",
+    "value" : "2324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_nata.test_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d5b305e39af6c43a.json",
+  "parameterValues" : [ ]
+}

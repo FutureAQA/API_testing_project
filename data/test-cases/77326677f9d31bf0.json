@@ -1,0 +1,98 @@
+{
+  "uid" : "77326677f9d31bf0",
+  "name" : "test_create_new_pet",
+  "fullName" : "tests.test_kate.test_post.TestPostPets#test_create_new_pet",
+  "historyId" : "25ddfd16712c1c50194bffd605253216",
+  "time" : {
+    "start" : 1698884953376,
+    "stop" : 1698884953613,
+    "duration" : 237
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'tags'",
+  "statusTrace" : "self = <tests.test_kate.test_post.TestPostPets object at 0x7f4344730fd0>\n\n    @allure.title(\"test_create_new_pet\")\n    def test_create_new_pet(self):\n        url = self.url.URL_PET\n        j = file_read('data/data_kate/body_new_pet.json')\n        response = MyRequests().post(url, data=j)\n>       assert response.json()['tags'][0]['name'] == j['tags'][0]['name'], 'Name of pet in response is not correct'\nE       KeyError: 'tags'\n\ntests/test_kate/test_post.py:23: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698884946801,
+      "stop" : 1698884946819,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "KeyError: 'tags'",
+    "statusTrace" : "self = <tests.test_kate.test_post.TestPostPets object at 0x7f4344730fd0>\n\n    @allure.title(\"test_create_new_pet\")\n    def test_create_new_pet(self):\n        url = self.url.URL_PET\n        j = file_read('data/data_kate/body_new_pet.json')\n        response = MyRequests().post(url, data=j)\n>       assert response.json()['tags'][0]['name'] == j['tags'][0]['name'], 'Name of pet in response is not correct'\nE       KeyError: 'tags'\n\ntests/test_kate/test_post.py:23: KeyError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "96203bc19517fa8b",
+      "name" : "log",
+      "source" : "96203bc19517fa8b.txt",
+      "type" : "text/plain",
+      "size" : 291
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test post pet"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_kate"
+  }, {
+    "name" : "suite",
+    "value" : "test_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostPets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az409-651"
+  }, {
+    "name" : "thread",
+    "value" : "2324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_kate.test_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "77326677f9d31bf0.json",
+  "parameterValues" : [ ]
+}

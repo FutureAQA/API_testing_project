@@ -1,0 +1,98 @@
+{
+  "uid" : "7f4674d7fe2c6b74",
+  "name" : "test_update_pet_check_status_code",
+  "fullName" : "tests.test_kate.test_put_pets.TestUpdatePets#test_update_pet_check_status_code",
+  "historyId" : "67d1968b122cf9d91d4ad9716eb0795f",
+  "time" : {
+    "start" : 1698884953618,
+    "stop" : 1698884953870,
+    "duration" : 252
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Status_code is not 200\nassert 500 == 200\n +  where 500 = <Response [500]>.status_code",
+  "statusTrace" : "self = <tests.test_kate.test_put_pets.TestUpdatePets object at 0x7f43447e3410>\n\n    @allure.title(\"test_update_pet_check_status_code\")\n    def test_update_pet_check_status_code(self):\n        url = self.url.URL_PET\n        j = file_read('data/data_kate/body_update_pet.json')\n        response = MyRequests().put(url, data=j)\n>       assert response.status_code == 200, \"Status_code is not 200\"\nE       AssertionError: Status_code is not 200\nE       assert 500 == 200\nE        +  where 500 = <Response [500]>.status_code\n\ntests/test_kate/test_put_pets.py:16: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698884946801,
+      "stop" : 1698884946819,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Status_code is not 200\nassert 500 == 200\n +  where 500 = <Response [500]>.status_code",
+    "statusTrace" : "self = <tests.test_kate.test_put_pets.TestUpdatePets object at 0x7f43447e3410>\n\n    @allure.title(\"test_update_pet_check_status_code\")\n    def test_update_pet_check_status_code(self):\n        url = self.url.URL_PET\n        j = file_read('data/data_kate/body_update_pet.json')\n        response = MyRequests().put(url, data=j)\n>       assert response.status_code == 200, \"Status_code is not 200\"\nE       AssertionError: Status_code is not 200\nE       assert 500 == 200\nE        +  where 500 = <Response [500]>.status_code\n\ntests/test_kate/test_put_pets.py:16: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b4a58d3f3bc0cc12",
+      "name" : "log",
+      "source" : "b4a58d3f3bc0cc12.txt",
+      "type" : "text/plain",
+      "size" : 292
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test update pet"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_kate"
+  }, {
+    "name" : "suite",
+    "value" : "test_put_pets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUpdatePets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az409-651"
+  }, {
+    "name" : "thread",
+    "value" : "2324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_kate.test_put_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7f4674d7fe2c6b74.json",
+  "parameterValues" : [ ]
+}
