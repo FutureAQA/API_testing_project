@@ -1,0 +1,77 @@
+{
+  "uid" : "c0f912b6531183b4",
+  "name" : "test_get_pets_check_status",
+  "fullName" : "tests.test_kate.test_get_pets.TestsGetPets#test_get_pets_check_status",
+  "historyId" : "f5fd98bffa619026efaa2bc6906e0cdd",
+  "time" : {
+    "start" : 1698971348528,
+    "stop" : 1698971348882,
+    "duration" : 354
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698971342341,
+      "stop" : 1698971342354,
+      "duration" : 13
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test get pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_kate"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_pets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestsGetPets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az447-590"
+  }, {
+    "name" : "thread",
+    "value" : "2325-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_kate.test_get_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "status",
+    "value" : "'pending'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c0f912b6531183b4.json",
+  "parameterValues" : [ "'pending'" ]
+}

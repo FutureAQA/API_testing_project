@@ -1,2 +1,0 @@
-INFO     src\utils\http_methods.py:http_methods.py:49 Response data: {'name': 'Milo', 'photoUrls': ['https://example.com/image1.jpg'], 'id': '9223372016900050437', 'category': {'id': 49579858, 'name': 'Abyssinian'}, 'tags': [{'id': 762680, 'name': 'Egyptian Mau'}, {'id': 233384, 'name': 'Australian Shepherd'}], 'status': 'available'}
-ERROR    src\utils\assertions:assertions.py:30 response JSON doesn't have key id

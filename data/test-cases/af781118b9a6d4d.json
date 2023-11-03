@@ -1,0 +1,68 @@
+{
+  "uid" : "af781118b9a6d4d",
+  "name" : "test_get_pets_by_status_available",
+  "fullName" : "tests.test_masha.test_get_pets#test_get_pets_by_status_available",
+  "historyId" : "8b6ea1abc12841cd98a263254788a6d8",
+  "time" : {
+    "start" : 1698971351368,
+    "stop" : 1698971351740,
+    "duration" : 372
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698971342341,
+      "stop" : 1698971342354,
+      "duration" : 13
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.test_masha"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_pets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az447-590"
+  }, {
+    "name" : "thread",
+    "value" : "2325-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_masha.test_get_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "af781118b9a6d4d.json",
+  "parameterValues" : [ ]
+}

@@ -6,12 +6,12 @@
       "name" : "AttributeError: 'StorePage' object has no attribute 'create_pet_with_valid_data'",
       "children" : [ {
         "name" : "Create pet with valid data has status code 200",
-        "uid" : "b52ec43685dfe5ba",
+        "uid" : "58523f866dca949f",
         "parentUid" : "6be19f00352d6646e80b452b02f8d31d",
         "status" : "broken",
         "time" : {
-          "start" : 1698884947615,
-          "stop" : 1698884947615,
+          "start" : 1698971343421,
+          "stop" : 1698971343421,
           "duration" : 0
         },
         "flaky" : false,
@@ -23,307 +23,21 @@
       "name" : "AttributeError: 'NoneType' object has no attribute 'status_code'",
       "children" : [ {
         "name" : "Create store with valid data has status code 200",
-        "uid" : "98551fd994f2f3b1",
+        "uid" : "72d565fb297edad3",
         "parentUid" : "7a38ce2d24faa1d3962a0a7ed03971a4",
         "status" : "broken",
         "time" : {
-          "start" : 1698884947646,
-          "stop" : 1698884947897,
-          "duration" : 251
+          "start" : 1698971343449,
+          "stop" : 1698971343789,
+          "duration" : 340
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "7a38ce2d24faa1d3962a0a7ed03971a4"
-    }, {
-      "name" : "KeyError: 'tags'",
-      "children" : [ {
-        "name" : "test_create_new_pet",
-        "uid" : "77326677f9d31bf0",
-        "parentUid" : "d01d89159c078a97a16e811b94f6ff33",
-        "status" : "broken",
-        "time" : {
-          "start" : 1698884953376,
-          "stop" : 1698884953613,
-          "duration" : 237
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_update_pet",
-        "uid" : "edf3f0b3e8248013",
-        "parentUid" : "d01d89159c078a97a16e811b94f6ff33",
-        "status" : "broken",
-        "time" : {
-          "start" : 1698884953877,
-          "stop" : 1698884954118,
-          "duration" : 241
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "d01d89159c078a97a16e811b94f6ff33"
-    }, {
-      "name" : "KeyError: 'id'",
-      "children" : [ {
-        "name" : "Get pet by ID > valid ID > status code is 200",
-        "uid" : "51586c89a4585ce4",
-        "parentUid" : "a00762da4f7a9fcab371b911d06bdbdc",
-        "status" : "broken",
-        "time" : {
-          "start" : 1698884963893,
-          "stop" : 1698884964143,
-          "duration" : 250
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Get pet by ID > deleted pet > status code is 404",
-        "uid" : "36f99239e4a73425",
-        "parentUid" : "a00762da4f7a9fcab371b911d06bdbdc",
-        "status" : "broken",
-        "time" : {
-          "start" : 1698884964673,
-          "stop" : 1698884964914,
-          "duration" : 241
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Get pet by ID > deleted pet > Pet not found error message",
-        "uid" : "7e40fbf0758b03d7",
-        "parentUid" : "a00762da4f7a9fcab371b911d06bdbdc",
-        "status" : "broken",
-        "time" : {
-          "start" : 1698884964927,
-          "stop" : 1698884965179,
-          "duration" : 252
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a00762da4f7a9fcab371b911d06bdbdc"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: Status code is not 200, status code is 500\nassert 500 == 200\n +  where 500 = <Response [500]>.status_code",
-      "children" : [ {
-        "name" : "test_delete_pet",
-        "uid" : "9f297d34b5f1eee7",
-        "parentUid" : "2267d39869426c7a72d5daaf9ac17607",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884949165,
-          "stop" : 1698884949435,
-          "duration" : 270
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "2267d39869426c7a72d5daaf9ac17607"
-    }, {
-      "name" : "AssertionError: Wrong text\nassert '{\"code\":500,...f6fea6615f)\"}' == 'Pet deleted'\n  - Pet deleted\n  + {\"code\":500,\"message\":\"There was an error processing your request. It has been logged (ID: 951971f6fea6615f)\"}",
-      "children" : [ {
-        "name" : "test_delete_pet_has_text",
-        "uid" : "26d98ccbe5e6af28",
-        "parentUid" : "82b78fb9b543524883a0d4760587f8e4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884949442,
-          "stop" : 1698884949690,
-          "duration" : 248
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "82b78fb9b543524883a0d4760587f8e4"
-    }, {
-      "name" : "AssertionError: Status_code is not 200\nassert 500 == 200\n +  where 500 = <Response [500]>.status_code",
-      "children" : [ {
-        "name" : "test_create_new_pet_check_status_code",
-        "uid" : "5f39b3d3c4ccafb",
-        "parentUid" : "1a2c80e62aa19ae3a8646e4a7561b65a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884953099,
-          "stop" : 1698884953359,
-          "duration" : 260
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_update_pet_check_status_code",
-        "uid" : "7f4674d7fe2c6b74",
-        "parentUid" : "1a2c80e62aa19ae3a8646e4a7561b65a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884953618,
-          "stop" : 1698884953870,
-          "duration" : 252
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "1a2c80e62aa19ae3a8646e4a7561b65a"
-    }, {
-      "name" : "AssertionError: Unexpected status code.\nassert 500 == 200\n +  where 500 = <Response [500]>.status_code\n +  and   200 = <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850>.OK\n +    where <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850> = <tests.test_vera.test_pets_get.TestGetPet object at 0x7f43447e99d0>.status_code",
-      "children" : [ {
-        "name" : "Get pet by status > status code 200",
-        "uid" : "ac1926cd402d3cbd",
-        "parentUid" : "becd1c91519a2ed4d77d6a9b0677292e",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884961845,
-          "stop" : 1698884962091,
-          "duration" : 246
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'status': 'available'}" ]
-      } ],
-      "uid" : "becd1c91519a2ed4d77d6a9b0677292e"
-    }, {
-      "name" : "AssertionError: Unexpected status code.\nassert 500 == 200\n +  where 500 = <Response [500]>.status_code\n +  and   200 = <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850>.OK\n +    where <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850> = <tests.test_vera.test_pets_get.TestGetPet object at 0x7f43447e8fd0>.status_code",
-      "children" : [ {
-        "name" : "Get pet by status > status code 200",
-        "uid" : "621b976dbb06e477",
-        "parentUid" : "9610aa0591d216c9b4029ab75a6c8db0",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884962100,
-          "stop" : 1698884962366,
-          "duration" : 266
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'status': 'pending'}" ]
-      } ],
-      "uid" : "9610aa0591d216c9b4029ab75a6c8db0"
-    }, {
-      "name" : "AssertionError: Unexpected status code.\nassert 500 == 200\n +  where 500 = <Response [500]>.status_code\n +  and   200 = <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850>.OK\n +    where <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850> = <tests.test_vera.test_pets_get.TestGetPet object at 0x7f43447e9390>.status_code",
-      "children" : [ {
-        "name" : "Get pet by status > status code 200",
-        "uid" : "769c11b33c7e3d2f",
-        "parentUid" : "c38adbf38afc9593a9be16a349f8d4a9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884962372,
-          "stop" : 1698884962629,
-          "duration" : 257
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'status': 'sold'}" ]
-      } ],
-      "uid" : "c38adbf38afc9593a9be16a349f8d4a9"
-    }, {
-      "name" : "AssertionError: Unexpected status code. Expected: 404, Actual: 500\nassert 500 == 404\n +  where 500 = <Response [500]>.status_code\n +  and   404 = <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850>.NOT_FOUND\n +    where <tests.test_vera.data.status_codes.StatusCode object at 0x7f43436d9850> = <tests.test_vera.test_pets_get.TestGetPet object at 0x7f43425e0910>.status_code",
-      "children" : [ {
-        "name" : "Get pet by ID > non existing ID > status code is 404",
-        "uid" : "98725b57e3b649a1",
-        "parentUid" : "a8509b9631c92bdbc197351d58ce5cd4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884964150,
-          "stop" : 1698884964406,
-          "duration" : 256
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a8509b9631c92bdbc197351d58ce5cd4"
-    }, {
-      "name" : "AssertionError: Wrong error message\nassert '{\"code\":500,...adb5d58941)\"}' == 'Pet not found'\n  - Pet not found\n  + {\"code\":500,\"message\":\"There was an error processing your request. It has been logged (ID: 17c403adb5d58941)\"}",
-      "children" : [ {
-        "name" : "Get pet by ID > non existing ID > error messages is 'Pet not found'",
-        "uid" : "4a7b468c27007d3b",
-        "parentUid" : "0f0399418b7a02fb5f2f4ed6120c7150",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884964413,
-          "stop" : 1698884964667,
-          "duration" : 254
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "0f0399418b7a02fb5f2f4ed6120c7150"
-    }, {
-      "name" : "AssertionError: None",
-      "children" : [ {
-        "name" : "Add a new pet > status code 200",
-        "uid" : "d21a32192b3045e2",
-        "parentUid" : "0cdff165a062bb7c2f604194e7950279",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884965186,
-          "stop" : 1698884965419,
-          "duration" : 233
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Add a new pet > Expected pet keys in response",
-        "uid" : "33a5f8d9aba046e1",
-        "parentUid" : "0cdff165a062bb7c2f604194e7950279",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884965664,
-          "stop" : 1698884965908,
-          "duration" : 244
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "0cdff165a062bb7c2f604194e7950279"
-    }, {
-      "name" : "AssertionError: response JSON doesn't have key 'name'",
-      "children" : [ {
-        "name" : "Add a new pet > Expected pet name in response",
-        "uid" : "c46c86faade7adec",
-        "parentUid" : "a1d07d9f52496bba02ac88f12cb3dbd4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884965916,
-          "stop" : 1698884966158,
-          "duration" : 242
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Create pet > Expected pet values in response",
-        "uid" : "ec14d08b0e4434ad",
-        "parentUid" : "a1d07d9f52496bba02ac88f12cb3dbd4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1698884966167,
-          "stop" : 1698884966407,
-          "duration" : 240
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a1d07d9f52496bba02ac88f12cb3dbd4"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }
