@@ -1,0 +1,87 @@
+{
+  "uid" : "1b9e66ad38badc86",
+  "name" : "test_example",
+  "fullName" : "tests.test_denis.test_example.TestGetPets#test_example",
+  "historyId" : "7255a523128e5581ff83b495133bc385",
+  "time" : {
+    "start" : 1699144303084,
+    "stop" : 1699144303499,
+    "duration" : 415
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699144302181,
+      "stop" : 1699144302197,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "90913cb43cda149b",
+      "name" : "log",
+      "source" : "90913cb43cda149b.txt",
+      "type" : "text/plain",
+      "size" : 178
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.test_denis"
+  }, {
+    "name" : "suite",
+    "value" : "test_example"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetPets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1107-162"
+  }, {
+    "name" : "thread",
+    "value" : "2348-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_denis.test_example"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b9e66ad38badc86.json",
+  "parameterValues" : [ ]
+}

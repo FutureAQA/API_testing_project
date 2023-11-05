@@ -1,11 +1,11 @@
 [ {
-  "buildOrder" : 34,
-  "reportUrl" : "https://FutureAQA.github.io/API_testing_project/34/",
+  "buildOrder" : 35,
+  "reportUrl" : "https://FutureAQA.github.io/API_testing_project/35/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "failed" : 1,
+    "failed" : 0,
     "broken" : 2,
-    "skipped" : 1,
+    "skipped" : 2,
     "passed" : 66,
     "unknown" : 0,
     "total" : 70

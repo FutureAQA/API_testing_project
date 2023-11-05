@@ -1,143 +1,143 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Nov 04 00:28:59 GMT 2023","Sat Nov 04 00:28:59 GMT 2023","263","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > status code 200","The test checks status code is 200 for the created pet
-        :param pet_id
-        :return: status code OK 200 "
-"passed","Sat Nov 04 00:28:49 GMT 2023","Sat Nov 04 00:28:50 GMT 2023","275","tests.test_tatiana.test_users","test_user_delate","Test_user_delate","","","test_delate_users_by_empty_username_negative",""
-"passed","Sat Nov 04 00:28:46 GMT 2023","Sat Nov 04 00:28:46 GMT 2023","0","tests.test_nata","test_pets","TestPet","","","post_add_a_new_pet_to_the_store",""
-"passed","Sat Nov 04 00:28:40 GMT 2023","Sat Nov 04 00:28:41 GMT 2023","259","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_by_status",""
-"passed","Sat Nov 04 00:28:35 GMT 2023","Sat Nov 04 00:28:36 GMT 2023","362","tests.test_alena","test_pets","","","","test_get_pets_by_status_pending",""
-"passed","Sat Nov 04 00:28:51 GMT 2023","Sat Nov 04 00:28:51 GMT 2023","256","tests.test_tatiana.test_users","test_user_get","Test_users_get","","","test_get_users_by_empty_username__negative",""
-"passed","Sat Nov 04 00:28:36 GMT 2023","Sat Nov 04 00:28:37 GMT 2023","332","tests.test_galya","test_example","","","","test_get_find_pets_by_status_pending",""
-"passed","Sat Nov 04 00:28:39 GMT 2023","Sat Nov 04 00:28:39 GMT 2023","282","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_is_json",""
-"passed","Sat Nov 04 00:28:55 GMT 2023","Sat Nov 04 00:28:55 GMT 2023","275","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > response is JSON format","
-        The test checks if the response content type is JSON
-        :param for status: ""available"", ""pending"",  ""sold""
-        :return: JSON format
+"passed","Sun Nov 05 00:31:49 GMT 2023","Sun Nov 05 00:31:50 GMT 2023","549","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_status",""
+"passed","Sun Nov 05 00:31:52 GMT 2023","Sun Nov 05 00:31:52 GMT 2023","378","tests.test_kate","test_post","TestPostPets","","","test_create_new_pet_check_status_code",""
+"passed","Sun Nov 05 00:31:46 GMT 2023","Sun Nov 05 00:31:46 GMT 2023","387","tests.test_kate","test_delete_pets","TestDeletePets","","","test_delete_pet",""
+"passed","Sun Nov 05 00:31:52 GMT 2023","Sun Nov 05 00:31:53 GMT 2023","408","tests.test_kate","test_put_pets","TestUpdatePets","","","test_update_pet_check_status_code",""
+"passed","Sun Nov 05 00:31:48 GMT 2023","Sun Nov 05 00:31:49 GMT 2023","386","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_by_status",""
+"passed","Sun Nov 05 00:31:46 GMT 2023","Sun Nov 05 00:31:47 GMT 2023","374","tests.test_kate","test_delete_pets","TestDeletePets","","","test_delete_deleted_pet",""
+"broken","Sun Nov 05 00:31:43 GMT 2023","Sun Nov 05 00:31:43 GMT 2023","0","tests.test_denis.test_pets","test_create_pets","TestCreateStore","","","Create pet with valid data has status code 200","
+        This test checks if response has status code 200
         "
-"passed","Sat Nov 04 00:28:37 GMT 2023","Sat Nov 04 00:28:38 GMT 2023","276","tests.test_galya","test_example","","","","test_get_user_by_user_name",""
-"passed","Sat Nov 04 00:28:53 GMT 2023","Sat Nov 04 00:28:54 GMT 2023","261","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > status code 200","
-        This test checks availability of pets by status and checks the status code of the response
-        :param for status: ""available"", ""pending"",  ""sold""
-        :return: status code OK 200
-        "
-"passed","Sat Nov 04 00:28:54 GMT 2023","Sat Nov 04 00:28:55 GMT 2023","1286","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > response is JSON format","
-        The test checks if the response content type is JSON
-        :param for status: ""available"", ""pending"",  ""sold""
-        :return: JSON format
-        "
-"passed","Sat Nov 04 00:28:50 GMT 2023","Sat Nov 04 00:28:50 GMT 2023","260","tests.test_tatiana.test_users","test_user_delate","Test_user_delate","","","test_delate_users_by_non_existent_username_negative",""
-"passed","Sat Nov 04 00:28:42 GMT 2023","Sat Nov 04 00:28:42 GMT 2023","275","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_keys",""
-"passed","Sat Nov 04 00:28:48 GMT 2023","Sat Nov 04 00:28:48 GMT 2023","393","tests.test_olga_r","test_example","","","","test_get_by_status_available",""
-"passed","Sat Nov 04 00:28:51 GMT 2023","Sat Nov 04 00:28:52 GMT 2023","1091","tests.test_tatiana.test_users","test_user_put","Test_users_put","","","test_update_users_positive",""
-"passed","Sat Nov 04 00:28:43 GMT 2023","Sat Nov 04 00:28:43 GMT 2023","276","tests.test_kate","test_put_pets","TestUpdatePets","","","test_update_pet",""
-"passed","Sat Nov 04 00:28:47 GMT 2023","Sat Nov 04 00:28:47 GMT 2023","274","tests.test_nata","test_pets","TestPet","","","put_update_an_existing_pet",""
-"passed","Sat Nov 04 00:28:52 GMT 2023","Sat Nov 04 00:28:53 GMT 2023","888","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > status code 200","
-        This test checks availability of pets by status and checks the status code of the response
-        :param for status: ""available"", ""pending"",  ""sold""
-        :return: status code OK 200
-        "
-"passed","Sat Nov 04 00:29:00 GMT 2023","Sat Nov 04 00:29:00 GMT 2023","273","tests.test_vera","test_pets_post","TestPostAddPet","","","Create pet > Expected pet values in response","
-        The test checks values in json response for the created pet
-        :param pet_data
-        :return: valid pet values in response
-        "
-"passed","Sat Nov 04 00:28:56 GMT 2023","Sat Nov 04 00:28:56 GMT 2023","259","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by invalid status > Not Found error message","
-        The test checks if the response error message is ""Not Found""
-        :param for status: ""invalid_status""
-        :return:  'message': 'HTTP 404 Not Found' "
-"passed","Sat Nov 04 00:28:44 GMT 2023","Sat Nov 04 00:28:45 GMT 2023","276","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_error_adress",""
-"passed","Sat Nov 04 00:28:48 GMT 2023","Sat Nov 04 00:28:48 GMT 2023","330","tests.test_olga_r","test_example","","","","test_get_by_status_pending",""
-"passed","Sat Nov 04 00:28:38 GMT 2023","Sat Nov 04 00:28:38 GMT 2023","267","tests.test_galya","test_example","","","","test_get_purchase_by_id",""
-"passed","Sat Nov 04 00:28:56 GMT 2023","Sat Nov 04 00:28:56 GMT 2023","276","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by invalid status > status code 400","
-        The test checks if the response status code is 400
-        :param for status: ""invalid_status""
-        :return: status code is BAD_REQUEST 400 "
-"passed","Sat Nov 04 00:28:59 GMT 2023","Sat Nov 04 00:29:00 GMT 2023","274","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > Expected pet keys in response","
-        The test checks pet keys in json response for the created pet
-        :param pet_data
-        :return: pet keys in response
-        "
-"passed","Sat Nov 04 00:28:57 GMT 2023","Sat Nov 04 00:28:57 GMT 2023","260","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > non existing ID > error messages is 'Pet not found'","
-        This test validates error message in the response for retrieving pet information by non-existing ID
-        :param : invalid pet_id = -1
-        :return: test for error message
-        "
-"passed","Sat Nov 04 00:28:44 GMT 2023","Sat Nov 04 00:28:44 GMT 2023","309","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_pending",""
-"passed","Sat Nov 04 00:28:43 GMT 2023","Sat Nov 04 00:28:43 GMT 2023","272","tests.test_kate","test_put_pets","TestUpdatePets","","","test_update_pet_check_status_code",""
-"passed","Sat Nov 04 00:28:42 GMT 2023","Sat Nov 04 00:28:43 GMT 2023","276","tests.test_kate","test_post","TestPostPets","","","test_create_new_pet_check_status_code",""
-"passed","Sat Nov 04 00:28:56 GMT 2023","Sat Nov 04 00:28:57 GMT 2023","551","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > valid ID > status code is 200","
+"passed","Sun Nov 05 00:31:46 GMT 2023","Sun Nov 05 00:31:46 GMT 2023","383","tests.test_kate","test_delete_pets","TestDeletePets","","","test_delete_pet_has_text",""
+"passed","Sun Nov 05 00:32:00 GMT 2023","Sun Nov 05 00:32:00 GMT 2023","458","tests.test_olga_r","test_example","","","","test_get_by_status_pending",""
+"passed","Sun Nov 05 00:32:00 GMT 2023","Sun Nov 05 00:32:01 GMT 2023","527","tests.test_steve","test_get_ex","","","","test_get_find_by_status",""
+"passed","Sun Nov 05 00:31:47 GMT 2023","Sun Nov 05 00:31:48 GMT 2023","367","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_is_json",""
+"passed","Sun Nov 05 00:31:50 GMT 2023","Sun Nov 05 00:31:50 GMT 2023","385","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_status",""
+"passed","Sun Nov 05 00:31:53 GMT 2023","Sun Nov 05 00:31:53 GMT 2023","422","tests.test_kate","test_put_pets","TestUpdatePets","","","test_update_pet",""
+"passed","Sun Nov 05 00:32:04 GMT 2023","Sun Nov 05 00:32:05 GMT 2023","1523","tests.test_tatiana.test_users","test_user_put","Test_users_put","","","test_update_users_positive",""
+"passed","Sun Nov 05 00:31:49 GMT 2023","Sun Nov 05 00:31:49 GMT 2023","364","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_by_status",""
+"passed","Sun Nov 05 00:32:11 GMT 2023","Sun Nov 05 00:32:12 GMT 2023","759","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > valid ID > status code is 200","
         This test to get pet info by ID and ensure status code is 200
         :param pet_data: pet data
         :return: status code OK 200
         "
-"passed","Sat Nov 04 00:28:41 GMT 2023","Sat Nov 04 00:28:41 GMT 2023","407","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_status",""
-"passed","Sat Nov 04 00:28:40 GMT 2023","Sat Nov 04 00:28:40 GMT 2023","273","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_by_status",""
-"passed","Sat Nov 04 00:28:42 GMT 2023","Sat Nov 04 00:28:42 GMT 2023","272","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_keys",""
-"passed","Sat Nov 04 00:28:48 GMT 2023","Sat Nov 04 00:28:49 GMT 2023","364","tests.test_steve","test_get_ex","","","","test_get_find_by_status",""
-"passed","Sat Nov 04 00:28:39 GMT 2023","Sat Nov 04 00:28:39 GMT 2023","259","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_is_json",""
-"passed","Sat Nov 04 00:28:39 GMT 2023","Sat Nov 04 00:28:40 GMT 2023","288","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_is_json",""
-"passed","Sat Nov 04 00:28:41 GMT 2023","Sat Nov 04 00:28:41 GMT 2023","334","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_status",""
-"passed","Sat Nov 04 00:28:58 GMT 2023","Sat Nov 04 00:28:59 GMT 2023","812","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > deleted pet > Pet not found error message","
-        This test to get pet info by ID and ensure ""Pet not found"" error message after deleting the pet
-        :param:  pet_data
-        :return: ""Pet not found""
-        "
-"passed","Sat Nov 04 00:28:46 GMT 2023","Sat Nov 04 00:28:46 GMT 2023","272","tests.test_nata","test_pets","TestPet","","","get_pet_by_id",""
-"passed","Sat Nov 04 00:28:39 GMT 2023","Sat Nov 04 00:28:39 GMT 2023","271","tests.test_kate","test_delete_pets","TestDeletePets","","","test_delete_deleted_pet",""
-"passed","Sat Nov 04 00:28:53 GMT 2023","Sat Nov 04 00:28:53 GMT 2023","276","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > status code 200","
-        This test checks availability of pets by status and checks the status code of the response
-        :param for status: ""available"", ""pending"",  ""sold""
-        :return: status code OK 200
-        "
-"passed","Sat Nov 04 00:28:43 GMT 2023","Sat Nov 04 00:28:43 GMT 2023","275","tests.test_kate","test_post","TestPostPets","","","test_create_new_pet",""
-"passed","Sat Nov 04 00:28:40 GMT 2023","Sat Nov 04 00:28:40 GMT 2023","275","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_by_status",""
-"skipped","Sat Nov 04 00:28:47 GMT 2023","Sat Nov 04 00:28:47 GMT 2023","0","tests.test_nata","test_pets","TestPet","","","post_uploads_an_image_pet",""
-"passed","Sat Nov 04 00:28:44 GMT 2023","Sat Nov 04 00:28:44 GMT 2023","260","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_sold",""
-"passed","Sat Nov 04 00:28:36 GMT 2023","Sat Nov 04 00:28:36 GMT 2023","302","tests.test_alena","test_pets","","","","test_get_pets_by_status_sold",""
-"passed","Sat Nov 04 00:28:57 GMT 2023","Sat Nov 04 00:28:58 GMT 2023","806","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > deleted pet > status code is 404","
+"passed","Sun Nov 05 00:32:13 GMT 2023","Sun Nov 05 00:32:14 GMT 2023","1155","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > deleted pet > status code is 404","
         This test to get pet info by ID and ensure status code is 404 after deleting the pet
         :param pet_data: pets data
         :return: status code NOT FOUND 404
         "
-"passed","Sat Nov 04 00:28:50 GMT 2023","Sat Nov 04 00:28:51 GMT 2023","274","tests.test_tatiana.test_users","test_user_get","Test_users_get","","","test_get_users_by_non_existent_username_negative",""
-"passed","Sat Nov 04 00:28:42 GMT 2023","Sat Nov 04 00:28:42 GMT 2023","265","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_keys",""
-"failed","Sat Nov 04 00:28:37 GMT 2023","Sat Nov 04 00:28:37 GMT 2023","260","tests.test_galya","test_example","","","","test_get_find_pets_by_id",""
-"broken","Sat Nov 04 00:28:36 GMT 2023","Sat Nov 04 00:28:36 GMT 2023","312","tests.test_denis.test_store","test_create_store","TestCreateStore","","","Create store with valid data has status code 200","
+"passed","Sun Nov 05 00:31:42 GMT 2023","Sun Nov 05 00:31:43 GMT 2023","394","tests.test_alena","test_pets","","","","test_get_pets_by_status_sold",""
+"broken","Sun Nov 05 00:31:43 GMT 2023","Sun Nov 05 00:31:43 GMT 2023","378","tests.test_denis.test_store","test_create_store","TestCreateStore","","","Create store with valid data has status code 200","
         This test checks if response has status code 200
         "
-"passed","Sat Nov 04 00:28:45 GMT 2023","Sat Nov 04 00:28:45 GMT 2023","312","tests.test_nata","test_pets","TestPet","","","get_finds_pets_by_status",""
-"passed","Sat Nov 04 00:28:45 GMT 2023","Sat Nov 04 00:28:46 GMT 2023","272","tests.test_nata","test_pets","TestPet","","","get_finds_pets_by_status",""
-"passed","Sat Nov 04 00:28:45 GMT 2023","Sat Nov 04 00:28:45 GMT 2023","388","tests.test_nata","test_pets","TestPet","","","get_finds_pets_by_status",""
-"passed","Sat Nov 04 00:28:52 GMT 2023","Sat Nov 04 00:28:52 GMT 2023","260","tests.test_tatiana.test_users","test_user_put","Test_users_put","","","test_update_users_negative",""
-"passed","Sat Nov 04 00:28:41 GMT 2023","Sat Nov 04 00:28:42 GMT 2023","275","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_status",""
-"broken","Sat Nov 04 00:28:36 GMT 2023","Sat Nov 04 00:28:36 GMT 2023","0","tests.test_denis.test_pets","test_create_pets","TestCreateStore","","","Create pet with valid data has status code 200","
-        This test checks if response has status code 200
+"passed","Sun Nov 05 00:31:44 GMT 2023","Sun Nov 05 00:31:44 GMT 2023","404","tests.test_galya","test_example","","","","test_get_find_pets_by_status_sold",""
+"passed","Sun Nov 05 00:32:11 GMT 2023","Sun Nov 05 00:32:11 GMT 2023","369","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by invalid status > Not Found error message","
+        The test checks if the response error message is ""Not Found""
+        :param for status: ""invalid_status""
+        :return:  'message': 'HTTP 404 Not Found' "
+"passed","Sun Nov 05 00:31:56 GMT 2023","Sun Nov 05 00:31:56 GMT 2023","383","tests.test_nata","test_pets","TestPet","","","get_finds_pets_by_status",""
+"passed","Sun Nov 05 00:32:01 GMT 2023","Sun Nov 05 00:32:02 GMT 2023","748","tests.test_tatiana.test_users","test_user_delate","Test_user_delate","","","test_delate_user_by_user_name_positive",""
+"passed","Sun Nov 05 00:32:16 GMT 2023","Sun Nov 05 00:32:16 GMT 2023","385","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > Expected pet keys in response","
+        The test checks pet keys in json response for the created pet
+        :param pet_data
+        :return: pet keys in response
         "
-"passed","Sat Nov 04 00:28:50 GMT 2023","Sat Nov 04 00:28:50 GMT 2023","551","tests.test_tatiana.test_users","test_user_get","Test_users_get","","","test_get_users_by_username_positive",""
-"passed","Sat Nov 04 00:28:37 GMT 2023","Sat Nov 04 00:28:37 GMT 2023","275","tests.test_galya","test_example","","","","test_get_find_pets_by_status_sold",""
-"passed","Sat Nov 04 00:28:36 GMT 2023","Sat Nov 04 00:28:36 GMT 2023","310","tests.test_denis","test_example","TestGetPets","","","test_example",""
-"passed","Sat Nov 04 00:28:49 GMT 2023","Sat Nov 04 00:28:49 GMT 2023","529","tests.test_tatiana.test_users","test_user_delate","Test_user_delate","","","test_delate_user_by_user_name_positive",""
-"passed","Sat Nov 04 00:28:57 GMT 2023","Sat Nov 04 00:28:57 GMT 2023","274","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > non existing ID > status code is 404","
-        This test to get pet info by non-existing ID and ensure status code is 404
-        :param: invalid pet_id = -1
-        :return: status code NOT FOUND 404
-        "
-"passed","Sat Nov 04 00:28:55 GMT 2023","Sat Nov 04 00:28:56 GMT 2023","261","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > response is JSON format","
-        The test checks if the response content type is JSON
+"passed","Sun Nov 05 00:31:48 GMT 2023","Sun Nov 05 00:31:48 GMT 2023","390","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_by_status",""
+"passed","Sun Nov 05 00:32:07 GMT 2023","Sun Nov 05 00:32:07 GMT 2023","375","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > status code 200","
+        This test checks availability of pets by status and checks the status code of the response
         :param for status: ""available"", ""pending"",  ""sold""
-        :return: JSON format
+        :return: status code OK 200
         "
-"passed","Sat Nov 04 00:28:43 GMT 2023","Sat Nov 04 00:28:44 GMT 2023","393","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_available",""
-"passed","Sat Nov 04 00:28:38 GMT 2023","Sat Nov 04 00:28:39 GMT 2023","280","tests.test_kate","test_delete_pets","TestDeletePets","","","test_delete_pet_has_text",""
-"passed","Sat Nov 04 00:29:00 GMT 2023","Sat Nov 04 00:29:00 GMT 2023","260","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > Expected pet name in response","
+"passed","Sun Nov 05 00:31:54 GMT 2023","Sun Nov 05 00:31:54 GMT 2023","438","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_pending",""
+"passed","Sun Nov 05 00:32:16 GMT 2023","Sun Nov 05 00:32:16 GMT 2023","372","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > Expected pet name in response","
         The test checks pet's name in json response for the created pet
         :param pet_data
         :return: pet's name in response
         "
-"passed","Sat Nov 04 00:28:38 GMT 2023","Sat Nov 04 00:28:38 GMT 2023","402","tests.test_kate","test_delete_pets","TestDeletePets","","","test_delete_pet",""
-"passed","Sat Nov 04 00:28:47 GMT 2023","Sat Nov 04 00:28:48 GMT 2023","393","tests.test_olena","test_get_pets","","","","test_get_pets_by_status_available",""
-"passed","Sat Nov 04 00:28:59 GMT 2023","Sat Nov 04 00:28:59 GMT 2023","276","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > Response is in json format","
+"passed","Sun Nov 05 00:32:14 GMT 2023","Sun Nov 05 00:32:15 GMT 2023","1163","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > deleted pet > Pet not found error message","
+        This test to get pet info by ID and ensure ""Pet not found"" error message after deleting the pet
+        :param:  pet_data
+        :return: ""Pet not found""
+        "
+"passed","Sun Nov 05 00:31:51 GMT 2023","Sun Nov 05 00:31:51 GMT 2023","381","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_keys",""
+"passed","Sun Nov 05 00:31:53 GMT 2023","Sun Nov 05 00:31:54 GMT 2023","554","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_available",""
+"passed","Sun Nov 05 00:32:09 GMT 2023","Sun Nov 05 00:32:10 GMT 2023","378","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > response is JSON format","
+        The test checks if the response content type is JSON
+        :param for status: ""available"", ""pending"",  ""sold""
+        :return: JSON format
+        "
+"passed","Sun Nov 05 00:31:58 GMT 2023","Sun Nov 05 00:31:59 GMT 2023","390","tests.test_nata","test_pets","TestPet","","","put_update_an_existing_pet",""
+"passed","Sun Nov 05 00:31:43 GMT 2023","Sun Nov 05 00:31:44 GMT 2023","591","tests.test_galya","test_example","","","","test_get_find_pets_by_status_pending",""
+"passed","Sun Nov 05 00:32:03 GMT 2023","Sun Nov 05 00:32:03 GMT 2023","380","tests.test_tatiana.test_users","test_user_get","Test_users_get","","","test_get_users_by_non_existent_username_negative",""
+"passed","Sun Nov 05 00:32:16 GMT 2023","Sun Nov 05 00:32:17 GMT 2023","370","tests.test_vera","test_pets_post","TestPostAddPet","","","Create pet > Expected pet values in response","
+        The test checks values in json response for the created pet
+        :param pet_data
+        :return: valid pet values in response
+        "
+"passed","Sun Nov 05 00:31:57 GMT 2023","Sun Nov 05 00:31:58 GMT 2023","389","tests.test_nata","test_pets","TestPet","","","get_pet_by_id",""
+"passed","Sun Nov 05 00:32:10 GMT 2023","Sun Nov 05 00:32:11 GMT 2023","393","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by invalid status > status code 400","
+        The test checks if the response status code is 400
+        :param for status: ""invalid_status""
+        :return: status code is BAD_REQUEST 400 "
+"passed","Sun Nov 05 00:32:02 GMT 2023","Sun Nov 05 00:32:02 GMT 2023","383","tests.test_tatiana.test_users","test_user_delate","Test_user_delate","","","test_delate_users_by_empty_username_negative",""
+"passed","Sun Nov 05 00:32:03 GMT 2023","Sun Nov 05 00:32:04 GMT 2023","384","tests.test_tatiana.test_users","test_user_get","Test_users_get","","","test_get_users_by_empty_username__negative",""
+"passed","Sun Nov 05 00:32:05 GMT 2023","Sun Nov 05 00:32:06 GMT 2023","364","tests.test_tatiana.test_users","test_user_put","Test_users_put","","","test_update_users_negative",""
+"passed","Sun Nov 05 00:31:52 GMT 2023","Sun Nov 05 00:31:52 GMT 2023","382","tests.test_kate","test_post","TestPostPets","","","test_create_new_pet",""
+"passed","Sun Nov 05 00:31:55 GMT 2023","Sun Nov 05 00:31:56 GMT 2023","531","tests.test_nata","test_pets","TestPet","","","get_finds_pets_by_status",""
+"passed","Sun Nov 05 00:32:10 GMT 2023","Sun Nov 05 00:32:10 GMT 2023","385","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > response is JSON format","
+        The test checks if the response content type is JSON
+        :param for status: ""available"", ""pending"",  ""sold""
+        :return: JSON format
+        "
+"passed","Sun Nov 05 00:31:54 GMT 2023","Sun Nov 05 00:31:55 GMT 2023","456","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_sold",""
+"passed","Sun Nov 05 00:31:48 GMT 2023","Sun Nov 05 00:31:48 GMT 2023","388","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_is_json",""
+"passed","Sun Nov 05 00:31:57 GMT 2023","Sun Nov 05 00:31:57 GMT 2023","1","tests.test_nata","test_pets","TestPet","","","post_add_a_new_pet_to_the_store",""
+"passed","Sun Nov 05 00:31:45 GMT 2023","Sun Nov 05 00:31:45 GMT 2023","400","tests.test_galya","test_example","","","","test_get_user_by_user_name",""
+"passed","Sun Nov 05 00:31:59 GMT 2023","Sun Nov 05 00:31:59 GMT 2023","507","tests.test_olena","test_get_pets","","","","test_get_pets_by_status_available",""
+"passed","Sun Nov 05 00:32:02 GMT 2023","Sun Nov 05 00:32:02 GMT 2023","364","tests.test_tatiana.test_users","test_user_delate","Test_user_delate","","","test_delate_users_by_non_existent_username_negative",""
+"passed","Sun Nov 05 00:31:43 GMT 2023","Sun Nov 05 00:31:43 GMT 2023","415","tests.test_denis","test_example","TestGetPets","","","test_example",""
+"passed","Sun Nov 05 00:31:55 GMT 2023","Sun Nov 05 00:31:55 GMT 2023","437","tests.test_nata","test_pets","TestPet","","","get_finds_pets_by_status",""
+"passed","Sun Nov 05 00:32:02 GMT 2023","Sun Nov 05 00:32:03 GMT 2023","753","tests.test_tatiana.test_users","test_user_get","Test_users_get","","","test_get_users_by_username_positive",""
+"skipped","Sun Nov 05 00:31:58 GMT 2023","Sun Nov 05 00:31:58 GMT 2023","0","tests.test_nata","test_pets","TestPet","","","post_uploads_an_image_pet",""
+"passed","Sun Nov 05 00:31:51 GMT 2023","Sun Nov 05 00:31:52 GMT 2023","365","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_keys",""
+"passed","Sun Nov 05 00:31:44 GMT 2023","Sun Nov 05 00:31:45 GMT 2023","384","tests.test_galya","test_example","","","","test_get_find_pets_by_id",""
+"passed","Sun Nov 05 00:31:50 GMT 2023","Sun Nov 05 00:31:50 GMT 2023","448","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_status",""
+"passed","Sun Nov 05 00:31:42 GMT 2023","Sun Nov 05 00:31:42 GMT 2023","476","tests.test_alena","test_pets","","","","test_get_pets_by_status_pending",""
+"passed","Sun Nov 05 00:32:15 GMT 2023","Sun Nov 05 00:32:15 GMT 2023","384","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > status code 200","The test checks status code is 200 for the created pet
+        :param pet_id
+        :return: status code OK 200 "
+"passed","Sun Nov 05 00:31:59 GMT 2023","Sun Nov 05 00:32:00 GMT 2023","533","tests.test_olga_r","test_example","","","","test_get_by_status_available",""
+"passed","Sun Nov 05 00:32:06 GMT 2023","Sun Nov 05 00:32:07 GMT 2023","1182","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > status code 200","
+        This test checks availability of pets by status and checks the status code of the response
+        :param for status: ""available"", ""pending"",  ""sold""
+        :return: status code OK 200
+        "
+"passed","Sun Nov 05 00:31:50 GMT 2023","Sun Nov 05 00:31:51 GMT 2023","383","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_check_keys",""
+"passed","Sun Nov 05 00:32:12 GMT 2023","Sun Nov 05 00:32:13 GMT 2023","381","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > non existing ID > error messages is 'Pet not found'","
+        This test validates error message in the response for retrieving pet information by non-existing ID
+        :param : invalid pet_id = -1
+        :return: test for error message
+        "
+"passed","Sun Nov 05 00:31:47 GMT 2023","Sun Nov 05 00:31:47 GMT 2023","377","tests.test_kate","test_get_pets","TestsGetPets","","","test_get_pets_is_json",""
+"passed","Sun Nov 05 00:32:15 GMT 2023","Sun Nov 05 00:32:16 GMT 2023","393","tests.test_vera","test_pets_post","TestPostAddPet","","","Add a new pet > Response is in json format","
         The test checks response is in json format for the created pet
         :param schema, headers
         :return: response is in json format
         "
+"passed","Sun Nov 05 00:32:12 GMT 2023","Sun Nov 05 00:32:12 GMT 2023","371","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by ID > non existing ID > status code is 404","
+        This test to get pet info by non-existing ID and ensure status code is 404
+        :param: invalid pet_id = -1
+        :return: status code NOT FOUND 404
+        "
+"passed","Sun Nov 05 00:32:07 GMT 2023","Sun Nov 05 00:32:08 GMT 2023","395","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > status code 200","
+        This test checks availability of pets by status and checks the status code of the response
+        :param for status: ""available"", ""pending"",  ""sold""
+        :return: status code OK 200
+        "
+"passed","Sun Nov 05 00:32:08 GMT 2023","Sun Nov 05 00:32:09 GMT 2023","1838","tests.test_vera","test_pets_get","TestGetPet","","","Get pet by status > response is JSON format","
+        The test checks if the response content type is JSON
+        :param for status: ""available"", ""pending"",  ""sold""
+        :return: JSON format
+        "
+"passed","Sun Nov 05 00:31:55 GMT 2023","Sun Nov 05 00:31:55 GMT 2023","368","tests.test_masha","test_get_pets","","","","test_get_pets_by_status_error_adress",""
+"skipped","Sun Nov 05 00:31:45 GMT 2023","Sun Nov 05 00:31:46 GMT 2023","376","tests.test_galya","test_example","","","","test_get_purchase_by_id",""
