@@ -1,6 +1,17 @@
 {
   "total" : 13,
   "items" : [ {
+    "uid" : "97d956b9bf3a320d62b2e6bbdc05ae0e",
+    "name" : "tests.test_vera",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 16,
+      "unknown" : 0,
+      "total" : 18
+    }
+  }, {
     "uid" : "e2552634b7b2ae09e788de4b88edee4e",
     "name" : "tests.test_denis.test_pets",
     "statistic" : {
@@ -34,17 +45,6 @@
       "total" : 19
     }
   }, {
-    "uid" : "97d956b9bf3a320d62b2e6bbdc05ae0e",
-    "name" : "tests.test_vera",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 18,
-      "unknown" : 0,
-      "total" : 18
-    }
-  }, {
     "uid" : "769a28585fbeb8a9feb5db66b0d26c18",
     "name" : "tests.test_tatiana.test_users",
     "statistic" : {
@@ -72,8 +72,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 4,
+      "skipped" : 0,
+      "passed" : 5,
       "unknown" : 0,
       "total" : 5
     }

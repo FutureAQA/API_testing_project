@@ -1,6 +1,17 @@
 {
   "total" : 33,
   "items" : [ {
+    "uid" : "b7a4493781f138e22858dc63b2e6d39d",
+    "name" : "Test GET method for pets",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
     "uid" : "0784e503b40eace0e9a109a77b08d462",
     "name" : "Testing Create The Pets",
     "statistic" : {
@@ -21,17 +32,6 @@
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
-    }
-  }, {
-    "uid" : "b7a4493781f138e22858dc63b2e6d39d",
-    "name" : "Test GET method for pets",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 13,
-      "unknown" : 0,
-      "total" : 13
     }
   }, {
     "uid" : "b063d1555d958e50ea065e886f13d967",
