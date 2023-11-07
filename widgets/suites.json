@@ -1,15 +1,15 @@
 {
   "total" : 13,
   "items" : [ {
-    "uid" : "97d956b9bf3a320d62b2e6bbdc05ae0e",
-    "name" : "tests.test_vera",
+    "uid" : "b04bad462b432473b61dc902406b484a",
+    "name" : "tests.test_galya",
     "statistic" : {
-      "failed" : 2,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 16,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 18
+      "total" : 5
     }
   }, {
     "uid" : "e2552634b7b2ae09e788de4b88edee4e",
@@ -45,6 +45,17 @@
       "total" : 19
     }
   }, {
+    "uid" : "97d956b9bf3a320d62b2e6bbdc05ae0e",
+    "name" : "tests.test_vera",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 18,
+      "unknown" : 0,
+      "total" : 18
+    }
+  }, {
     "uid" : "769a28585fbeb8a9feb5db66b0d26c18",
     "name" : "tests.test_tatiana.test_users",
     "statistic" : {
@@ -65,17 +76,6 @@
       "passed" : 6,
       "unknown" : 0,
       "total" : 7
-    }
-  }, {
-    "uid" : "b04bad462b432473b61dc902406b484a",
-    "name" : "tests.test_galya",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 5,
-      "unknown" : 0,
-      "total" : 5
     }
   }, {
     "uid" : "0200a61273a82f3258bb185530315cd7",
