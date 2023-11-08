@@ -1,0 +1,93 @@
+{
+  "uid" : "5ade21343236933",
+  "name" : "test_get_pets_is_json",
+  "fullName" : "tests.test_kate.test_get_pets.TestsGetPets#test_get_pets_is_json",
+  "historyId" : "aea83469df890b68565b2feecc6c3037",
+  "time" : {
+    "start" : 1699403360876,
+    "stop" : 1699403360982,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699403358646,
+      "stop" : 1699403358661,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ea43549e00379eef",
+      "name" : "log",
+      "source" : "ea43549e00379eef.txt",
+      "type" : "text/plain",
+      "size" : 73
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test get pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_kate"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_pets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestsGetPets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az189-232"
+  }, {
+    "name" : "thread",
+    "value" : "2268-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_kate.test_get_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "status",
+    "value" : "'sold'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5ade21343236933.json",
+  "parameterValues" : [ "'sold'" ]
+}
