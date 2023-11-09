@@ -6,13 +6,13 @@
       "name" : "AttributeError: 'StorePage' object has no attribute 'create_pet_with_valid_data'",
       "children" : [ {
         "name" : "Create pet with valid data has status code 200",
-        "uid" : "455414d06af19011",
+        "uid" : "a9b17f5827d5db33",
         "parentUid" : "6be19f00352d6646e80b452b02f8d31d",
         "status" : "broken",
         "time" : {
-          "start" : 1699403359061,
-          "stop" : 1699403359062,
-          "duration" : 1
+          "start" : 1699489756754,
+          "stop" : 1699489756754,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +23,13 @@
       "name" : "AttributeError: 'NoneType' object has no attribute 'status_code'",
       "children" : [ {
         "name" : "Create store with valid data has status code 200",
-        "uid" : "985579ec507bd3e0",
+        "uid" : "3cea5a47e72ffcf2",
         "parentUid" : "7a38ce2d24faa1d3962a0a7ed03971a4",
         "status" : "broken",
         "time" : {
-          "start" : 1699403359092,
-          "stop" : 1699403359222,
-          "duration" : 130
+          "start" : 1699489756782,
+          "stop" : 1699489757131,
+          "duration" : 349
         },
         "flaky" : false,
         "newFailed" : false,
@@ -44,13 +44,13 @@
       "name" : "AssertionError: Wrong status code\nassert 200 == 404\n +  where 200 = <Response [200]>.status_code",
       "children" : [ {
         "name" : "test_get_find_pets_by_id",
-        "uid" : "67991d539328346",
+        "uid" : "ce1fdeb23dc5890e",
         "parentUid" : "5139905ebb6b978c012fd8ceb40021cc",
         "status" : "failed",
         "time" : {
-          "start" : 1699403359694,
-          "stop" : 1699403359813,
-          "duration" : 119
+          "start" : 1699489758089,
+          "stop" : 1699489758435,
+          "duration" : 346
         },
         "flaky" : false,
         "newFailed" : false,
