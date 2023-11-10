@@ -7,6 +7,7 @@ from data.data_kate.data_kate import StatusCode
 from tests.test_kate.confest_kate import create_and_delete_user
 from data.data_kate.data_kate import AllData
 from tests.test_kate.pages.page_user import update_user_data
+import allure
 
 
 @allure.epic("Tests for users")
