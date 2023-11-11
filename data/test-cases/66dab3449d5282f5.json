@@ -1,0 +1,108 @@
+{
+  "uid" : "66dab3449d5282f5",
+  "name" : "Get pet by ID > deleted pet > status code is 404",
+  "fullName" : "tests.test_vera.test_pets_get.TestGetPet#test_get_pet_by_id_after_deleting_status_code_404",
+  "historyId" : "3fec3dd310af5b8ad417d13f86fc0cee",
+  "time" : {
+    "start" : 1699662554712,
+    "stop" : 1699662555064,
+    "duration" : 352
+  },
+  "description" : "\n        This test to get pet info by ID and ensure status code is 404 after deleting the pet\n        :param pet_data: pets data\n        :return: status code NOT FOUND 404\n        ",
+  "descriptionHtml" : "<pre><code>    This test to get pet info by ID and ensure status code is 404 after deleting the pet\n    :param pet_data: pets data\n    :return: status code NOT FOUND 404\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "pet_data",
+    "time" : {
+      "start" : 1699662554711,
+      "stop" : 1699662554711,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699662544732,
+      "stop" : 1699662544750,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        This test to get pet info by ID and ensure status code is 404 after deleting the pet\n        :param pet_data: pets data\n        :return: status code NOT FOUND 404\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "212df1ac06efaec4",
+      "name" : "log",
+      "source" : "212df1ac06efaec4.txt",
+      "type" : "text/plain",
+      "size" : 789
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test GET method for pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_get"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az363-56"
+  }, {
+    "name" : "thread",
+    "value" : "2213-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_get"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "66dab3449d5282f5.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,90 @@
+{
+  "uid" : "4a5f4f4a0b11f42f",
+  "name" : "test_update_pet",
+  "fullName" : "tests.test_kate.test_put_pets.TestUpdatePets#test_update_pet",
+  "historyId" : "bec1b10f377581b59322843f2e90c2f2",
+  "time" : {
+    "start" : 1699662549247,
+    "stop" : 1699662549362,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699662544732,
+      "stop" : 1699662544750,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "31ff3ddbd30490f6",
+      "name" : "log",
+      "source" : "31ff3ddbd30490f6.txt",
+      "type" : "text/plain",
+      "size" : 292
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test update pet"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_kate"
+  }, {
+    "name" : "suite",
+    "value" : "test_put_pets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUpdatePets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az363-56"
+  }, {
+    "name" : "thread",
+    "value" : "2213-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_kate.test_put_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4a5f4f4a0b11f42f.json",
+  "parameterValues" : [ ]
+}
