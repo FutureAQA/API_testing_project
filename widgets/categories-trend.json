@@ -1,9 +1,8 @@
 [ {
-  "buildOrder" : 41,
-  "reportUrl" : "https://FutureAQA.github.io/API_testing_project/41/",
+  "buildOrder" : 42,
+  "reportUrl" : "https://FutureAQA.github.io/API_testing_project/42/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "Product defects" : 1,
     "Test defects" : 2
   }
 } ]

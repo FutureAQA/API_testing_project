@@ -1,0 +1,164 @@
+{
+  "uid" : "e5708908bfd9cb26",
+  "name" : "Create store with valid data has status code 200",
+  "fullName" : "tests.test_denis.test_store.test_create_store.TestCreateStore#test_create_store_with_valid_data_has_status_code_200",
+  "historyId" : "860c8c011ecdbd4c995ef6932452709e",
+  "time" : {
+    "start" : 1699749125078,
+    "stop" : 1699749125467,
+    "duration" : 389
+  },
+  "description" : "\n        This test checks if response has status code 200\n        ",
+  "descriptionHtml" : "<pre><code>    This test checks if response has status code 200\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'status_code'",
+  "statusTrace" : "self = <tests.test_denis.test_store.test_create_store.TestCreateStore object at 0x7f2b3ebb2010>\n\n    @allure.title(\"Create store with valid data has status code 200\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    def test_create_store_with_valid_data_has_status_code_200(self):\n        \"\"\"\n        This test checks if response has status code 200\n        \"\"\"\n        response = self.store_page.create_store_with_valid_data()\n>       self.assertions.assert_status_code(response, self.status_code.STATUS_OK)\n\ntests/test_denis/test_store/test_create_store.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresponse = None, expected_status_code = 200\n\n    @staticmethod\n    def assert_status_code(response: Response, expected_status_code: int):\n>       actual_status_code = response.status_code\nE       AttributeError: 'NoneType' object has no attribute 'status_code'\n\nsrc/utils/assertions.py:12: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699749123805,
+      "stop" : 1699749123822,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        This test checks if response has status code 200\n        ",
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'status_code'",
+    "statusTrace" : "self = <tests.test_denis.test_store.test_create_store.TestCreateStore object at 0x7f2b3ebb2010>\n\n    @allure.title(\"Create store with valid data has status code 200\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    def test_create_store_with_valid_data_has_status_code_200(self):\n        \"\"\"\n        This test checks if response has status code 200\n        \"\"\"\n        response = self.store_page.create_store_with_valid_data()\n>       self.assertions.assert_status_code(response, self.status_code.STATUS_OK)\n\ntests/test_denis/test_store/test_create_store.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresponse = None, expected_status_code = 200\n\n    @staticmethod\n    def assert_status_code(response: Response, expected_status_code: int):\n>       actual_status_code = response.status_code\nE       AttributeError: 'NoneType' object has no attribute 'status_code'\n\nsrc/utils/assertions.py:12: AttributeError",
+    "steps" : [ {
+      "name" : "Create store with valid data",
+      "time" : {
+        "start" : 1699749125078,
+        "stop" : 1699749125466,
+        "duration" : 388
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get all stores",
+        "time" : {
+          "start" : 1699749125078,
+          "stop" : 1699749125078,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Get store data",
+        "time" : {
+          "start" : 1699749125078,
+          "stop" : 1699749125465,
+          "duration" : 387
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Validate response",
+        "time" : {
+          "start" : 1699749125465,
+          "stop" : 1699749125465,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d62eab6382899c26",
+      "name" : "log",
+      "source" : "d62eab6382899c26.txt",
+      "type" : "text/plain",
+      "size" : 911
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "epic",
+    "value" : "Testing Create a Store"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_denis.test_store"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_store"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateStore"
+  }, {
+    "name" : "host",
+    "value" : "fv-az176-439"
+  }, {
+    "name" : "thread",
+    "value" : "2350-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_denis.test_store.test_create_store"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e5708908bfd9cb26.json",
+  "parameterValues" : [ ]
+}

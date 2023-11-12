@@ -1,0 +1,96 @@
+{
+  "uid" : "3fc249cda351bd2b",
+  "name" : "Get pet by status > response is JSON format",
+  "fullName" : "tests.test_vera.test_pets_get.TestGetPet#test_get_pet_by_status_response_is_json_type",
+  "historyId" : "6f45434b8263e3e04f51838db13d2519",
+  "time" : {
+    "start" : 1699749160030,
+    "stop" : 1699749160393,
+    "duration" : 363
+  },
+  "description" : "\n        The test checks if the response content type is JSON\n        :param for status: \"available\", \"pending\",  \"sold\"\n        :return: JSON format\n        ",
+  "descriptionHtml" : "<pre><code>    The test checks if the response content type is JSON\n    :param for status: &quot;available&quot;, &quot;pending&quot;,  &quot;sold&quot;\n    :return: JSON format\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699749123805,
+      "stop" : 1699749123822,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        The test checks if the response content type is JSON\n        :param for status: \"available\", \"pending\",  \"sold\"\n        :return: JSON format\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4286d583783b090d",
+      "name" : "log",
+      "source" : "4286d583783b090d.txt",
+      "type" : "text/plain",
+      "size" : 92
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test GET method for pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_get"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az176-439"
+  }, {
+    "name" : "thread",
+    "value" : "2350-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_get"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "status",
+    "value" : "{'status': 'available'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3fc249cda351bd2b.json",
+  "parameterValues" : [ "{'status': 'available'}" ]
+}

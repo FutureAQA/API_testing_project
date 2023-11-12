@@ -1,0 +1,96 @@
+{
+  "uid" : "373109e6524819c4",
+  "name" : "Get pet by status > status code 200",
+  "fullName" : "tests.test_vera.test_pets_get.TestGetPet#test_get_pet_by_status_has_status_code_200",
+  "historyId" : "ceab07c357bf7828e758b97696359afd",
+  "time" : {
+    "start" : 1699749158914,
+    "stop" : 1699749159281,
+    "duration" : 367
+  },
+  "description" : "\n        This test checks availability of pets by status and checks the status code of the response\n        :param for status: \"available\", \"pending\",  \"sold\"\n        :return: status code OK 200\n        ",
+  "descriptionHtml" : "<pre><code>    This test checks availability of pets by status and checks the status code of the response\n    :param for status: &quot;available&quot;, &quot;pending&quot;,  &quot;sold&quot;\n    :return: status code OK 200\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699749123805,
+      "stop" : 1699749123822,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        This test checks availability of pets by status and checks the status code of the response\n        :param for status: \"available\", \"pending\",  \"sold\"\n        :return: status code OK 200\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "87d4faa451d493b7",
+      "name" : "log",
+      "source" : "87d4faa451d493b7.txt",
+      "type" : "text/plain",
+      "size" : 92
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test GET method for pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_get"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az176-439"
+  }, {
+    "name" : "thread",
+    "value" : "2350-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_get"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "status",
+    "value" : "{'status': 'available'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "373109e6524819c4.json",
+  "parameterValues" : [ "{'status': 'available'}" ]
+}

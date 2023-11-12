@@ -6,13 +6,13 @@
       "name" : "AttributeError: 'StorePage' object has no attribute 'create_pet_with_valid_data'",
       "children" : [ {
         "name" : "Create pet with valid data has status code 200",
-        "uid" : "ded2717ae5a716ea",
+        "uid" : "d239c02d980f7e58",
         "parentUid" : "6be19f00352d6646e80b452b02f8d31d",
         "status" : "broken",
         "time" : {
-          "start" : 1699662545507,
-          "stop" : 1699662545507,
-          "duration" : 0
+          "start" : 1699749125037,
+          "stop" : 1699749125038,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +23,13 @@
       "name" : "AttributeError: 'NoneType' object has no attribute 'status_code'",
       "children" : [ {
         "name" : "Create store with valid data has status code 200",
-        "uid" : "d146afaf1a832f74",
+        "uid" : "e5708908bfd9cb26",
         "parentUid" : "7a38ce2d24faa1d3962a0a7ed03971a4",
         "status" : "broken",
         "time" : {
-          "start" : 1699662545542,
-          "stop" : 1699662545674,
-          "duration" : 132
+          "start" : 1699749125078,
+          "stop" : 1699749125467,
+          "duration" : 389
         },
         "flaky" : false,
         "newFailed" : false,
@@ -38,27 +38,6 @@
       "uid" : "7a38ce2d24faa1d3962a0a7ed03971a4"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: Wrong status code\nassert 200 == 404\n +  where 200 = <Response [200]>.status_code",
-      "children" : [ {
-        "name" : "test_get_find_pets_by_id",
-        "uid" : "fc4893184dfb24c2",
-        "parentUid" : "5139905ebb6b978c012fd8ceb40021cc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1699662545983,
-          "stop" : 1699662546294,
-          "duration" : 311
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "5139905ebb6b978c012fd8ceb40021cc"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }
