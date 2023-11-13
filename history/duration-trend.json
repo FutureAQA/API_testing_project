@@ -1,8 +1,8 @@
 [ {
-  "buildOrder" : 42,
-  "reportUrl" : "https://FutureAQA.github.io/API_testing_project/42/",
+  "buildOrder" : 43,
+  "reportUrl" : "https://FutureAQA.github.io/API_testing_project/43/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "duration" : 43581
+    "duration" : 33401
   }
 } ]
