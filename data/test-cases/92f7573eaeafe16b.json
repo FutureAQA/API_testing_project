@@ -1,0 +1,90 @@
+{
+  "uid" : "92f7573eaeafe16b",
+  "name" : "test_update_pet_check_status_code",
+  "fullName" : "tests.test_kate.test_put_pets.TestUpdatePets#test_update_pet_check_status_code",
+  "historyId" : "67d1968b122cf9d91d4ad9716eb0795f",
+  "time" : {
+    "start" : 1699921786184,
+    "stop" : 1699921786309,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699921782259,
+      "stop" : 1699921782273,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "81913c4fd253f8d2",
+      "name" : "log",
+      "source" : "81913c4fd253f8d2.txt",
+      "type" : "text/plain",
+      "size" : 292
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test update pet"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_kate"
+  }, {
+    "name" : "suite",
+    "value" : "test_put_pets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUpdatePets"
+  }, {
+    "name" : "host",
+    "value" : "fv-az654-441"
+  }, {
+    "name" : "thread",
+    "value" : "2432-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_kate.test_put_pets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "92f7573eaeafe16b.json",
+  "parameterValues" : [ ]
+}

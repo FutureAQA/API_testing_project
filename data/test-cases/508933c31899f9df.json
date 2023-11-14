@@ -1,0 +1,123 @@
+{
+  "uid" : "508933c31899f9df",
+  "name" : "Create pet > Expected pet values in response",
+  "fullName" : "tests.test_vera.test_pets_post.TestPostAddPet#test_add_pet_id_in_response",
+  "historyId" : "64a405546270b1477a9e77a9ec2b5a34",
+  "time" : {
+    "start" : 1699921797850,
+    "stop" : 1699921797976,
+    "duration" : 126
+  },
+  "description" : "\n        The test checks values in json response for the created pet\n        :param pet_data\n        :return: valid pet values in response\n        ",
+  "descriptionHtml" : "<pre><code>    The test checks values in json response for the created pet\n    :param pet_data\n    :return: valid pet values in response\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1699921782259,
+      "stop" : 1699921782273,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "headers",
+    "time" : {
+      "start" : 1699921797850,
+      "stop" : 1699921797850,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "pet_data",
+    "time" : {
+      "start" : 1699921797850,
+      "stop" : 1699921797850,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        The test checks values in json response for the created pet\n        :param pet_data\n        :return: valid pet values in response\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f840fcd55f733bb3",
+      "name" : "log",
+      "source" : "f840fcd55f733bb3.txt",
+      "type" : "text/plain",
+      "size" : 323
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "POST: Add a new pet to the store"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_post"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPostAddPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az654-441"
+  }, {
+    "name" : "thread",
+    "value" : "2432-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_post"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "508933c31899f9df.json",
+  "parameterValues" : [ ]
+}
