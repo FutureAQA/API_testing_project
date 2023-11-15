@@ -14,6 +14,8 @@ class PetUrl:
     URL_USER = 'user'
 
 
+
+
 @dataclass
 class User:
     id: int = None
