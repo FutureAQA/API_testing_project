@@ -3,7 +3,7 @@ from requests import Response
 from data.data_kate.data_kate import AllData
 
 
-class Assertion:
+class MyAssertion:
 
     def assert_status_code(self, response: Response, expected_status_code: int):
         actual_status_code = response.status_code
@@ -16,8 +16,8 @@ class Assertion:
     def assert_response_is_json(self, response: Response):
         assert 'application/json' in response.headers.get('Content-Type', ''), 'Response is not in JSON format'
 
-    def assert_check_message(self, response: Response, person_info):
-        assert response.json()['message'] == str(person_info['id']), 'Message in response is not correct'
+    def assert_check_key_message(self, response: Response, text):
+        assert response.json()['message'] == str(text), 'Message in response is not correct'
 
     def assert_dicts_values_matches(self, user_data, person_info):
         for key in person_info:
