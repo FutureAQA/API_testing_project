@@ -1,0 +1,93 @@
+{
+  "uid" : "1a66ba7baa1a792a",
+  "name" : "Get pet by invalid status > status code 400",
+  "fullName" : "tests.test_vera.test_pets_get.TestGetPet#test_get_pet_by_invalid_status_has_status_code_is_400",
+  "historyId" : "bea6ad8ac3e141c936ead5b9369f891d",
+  "time" : {
+    "start" : 1700008251873,
+    "stop" : 1700008252249,
+    "duration" : 376
+  },
+  "description" : "\n        The test checks if the response status code is 400\n        :param for status: \"invalid_status\"\n        :return: status code is BAD_REQUEST 400 ",
+  "descriptionHtml" : "<pre><code>    The test checks if the response status code is 400\n    :param for status: &quot;invalid_status&quot;\n    :return: status code is BAD_REQUEST 400 \n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1700008215146,
+      "stop" : 1700008215160,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        The test checks if the response status code is 400\n        :param for status: \"invalid_status\"\n        :return: status code is BAD_REQUEST 400 ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e75cdb2299d32e9",
+      "name" : "log",
+      "source" : "e75cdb2299d32e9.txt",
+      "type" : "text/plain",
+      "size" : 97
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test GET method for pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_get"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az658-644"
+  }, {
+    "name" : "thread",
+    "value" : "2440-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_get"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1a66ba7baa1a792a.json",
+  "parameterValues" : [ ]
+}

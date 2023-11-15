@@ -1,0 +1,93 @@
+{
+  "uid" : "20d20168e45d559b",
+  "name" : "Get pet by ID > non existing ID > error messages is 'Pet not found'",
+  "fullName" : "tests.test_vera.test_pets_get.TestGetPet#test_get_pet_by_non_existing_id_error_message",
+  "historyId" : "e09fb9352d24a4abaf2715315530bb73",
+  "time" : {
+    "start" : 1700008253948,
+    "stop" : 1700008254315,
+    "duration" : 367
+  },
+  "description" : "\n        This test validates error message in the response for retrieving pet information by non-existing ID\n        :param : invalid pet_id = -1\n        :return: test for error message\n        ",
+  "descriptionHtml" : "<pre><code>    This test validates error message in the response for retrieving pet information by non-existing ID\n    :param : invalid pet_id = -1\n    :return: test for error message\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1700008215146,
+      "stop" : 1700008215160,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        This test validates error message in the response for retrieving pet information by non-existing ID\n        :param : invalid pet_id = -1\n        :return: test for error message\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "37ba907a7be2eddf",
+      "name" : "log",
+      "source" : "37ba907a7be2eddf.txt",
+      "type" : "text/plain",
+      "size" : 73
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test GET method for pets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.test_vera"
+  }, {
+    "name" : "suite",
+    "value" : "test_pets_get"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetPet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az658-644"
+  }, {
+    "name" : "thread",
+    "value" : "2440-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_vera.test_pets_get"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "20d20168e45d559b.json",
+  "parameterValues" : [ ]
+}
