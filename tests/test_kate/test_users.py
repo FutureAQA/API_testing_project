@@ -61,6 +61,7 @@ class TestCreateUsers:
         response, person_info, updated_person_info = get_updated_user_data
         self.assertion.assert_check_key_message(response, person_info['id'])
 
+
     @allure.title("test_update_user_check_value")
     def test_update_user_check_value(self, get_response_updated_user):
         response_get, person_info, updated_person_info = get_response_updated_user
@@ -72,6 +73,7 @@ class TestCreateUsers:
         response_get, person_info, updated_person_info = get_response_updated_user
         assert response_get.json()['username'] == person_info['username'], 'Username is changed'
         assert response_get.json()['id'] == person_info['id'], 'ID is changed'
+
 
     @allure.title("test_delete_user_status_code")
     def test_delete_user_status_code(self, get_info_created_user):
@@ -88,8 +90,5 @@ class TestCreateUsers:
         self.test_user.delete_user(get_info_created_user['username'])
         response_del = self.test_user.delete_user(get_info_created_user['username'])
         self.assertions.assert_status_code(response_del, self.status_code.NOT_FOUND)
-
-
-
 
 
