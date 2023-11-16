@@ -4,7 +4,7 @@ from typing import Optional
 from pydantic import BaseModel, field_validator
 from src.logger.logger import get_logs
 
-logger = get_logs("utils\schemas\store\store_schemas")
+logger = get_logs(r"utils\schemas\store\store_schemas.py")
 
 
 class GetComplete(Enum):
@@ -42,6 +42,6 @@ class Store(BaseModel):
     def validate_time_format(cls, value):
         pattern = r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}\+\d{2}:\d{2}'
         if not re.fullmatch(pattern, value):
-            logger.error(f"Неверный формат времени {value}")
-            raise ValueError("Неверный формат времени")
+            logger.error(f"Invalid time format {value}")
+            raise ValueError(f"Invalid time format {value}")
         return value

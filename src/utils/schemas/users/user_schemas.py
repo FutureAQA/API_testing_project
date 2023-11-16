@@ -1,6 +1,11 @@
 from typing import Optional
 from pydantic import BaseModel, ValidationError, field_validator
+
+from src.logger.logger import get_logs
 from src.utils.schemas.basic_validator import BasicValidator
+
+
+logger = get_logs(r"utils\schemas\users\user_schemas.py")
 
 validator = BasicValidator()
 
@@ -14,7 +19,6 @@ class User(BaseModel):
     password: Optional[str] = "12345"
     phone: Optional[str] = "12345"
     userStatus: Optional[int] = 1
-
 
     @field_validator("email")
     @classmethod

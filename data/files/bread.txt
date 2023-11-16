@@ -1,0 +1,14 @@
+[
+    "Abyssinian", "American Bobtail", "Balinese", "Bengal", "Birman",
+    "Bombay", "British Shorthair", "Burmese", "Chartreux", "Cornish Rex",
+    "Devon Rex", "Egyptian Mau", "Exotic Shorthair", "Himalayan", "Japanese Bobtail",
+    "Korat", "Maine Coon", "Manx", "Norwegian Forest", "Ocicat",
+    "Oriental", "Persian", "Ragdoll", "Russian Blue", "Scottish Fold",
+    "Siamese", "Siberian", "Singapura", "Somali", "Sphynx",
+    "Tonkinese", "Turkish Angora", "Turkish Van", "Airedale Terrier", "Australian Shepherd",
+    "Beagle", "Bernese Mountain Dog", "Bichon Frise", "Border Collie", "Boxer",
+    "Cavalier King Charles Spaniel", "Chihuahua", "Cocker Spaniel", "Dachshund", "Doberman Pinscher",
+    "English Bulldog", "French Bulldog", "German Shepherd", "Golden Retriever", "Great Dane",
+    "Labrador Retriever", "Maltese", "Miniature Schnauzer", "Poodle", "Pug",
+    "Rottweiler", "Saint Bernard", "Siberian Husky", "Shih Tzu", "Weimaraner"
+]

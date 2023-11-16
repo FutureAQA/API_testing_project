@@ -4,28 +4,33 @@ logger = get_logs(r"pages\create_store.py")
 
 
 class CreateStore:
-
-    def get_id(self, uid):
+    @staticmethod
+    def get_id(uid):
         if uid is not None:
             return {"id": uid}
 
-    def get_pet_id(self, pet_id):
+    @staticmethod
+    def get_pet_id(pet_id):
         if pet_id is not None:
             return {"petId": pet_id}
 
-    def get_quantity(self, quantity):
+    @staticmethod
+    def get_quantity(quantity):
         if quantity is not None:
             return {"quantity": quantity}
 
-    def get_ship_date(self, ship_date):
+    @staticmethod
+    def get_ship_date(ship_date):
         if ship_date is not None:
             return {"shipDate": ship_date}
 
-    def get_status(self, status):
+    @staticmethod
+    def get_status(status):
         if status is not None:
             return {"status": status}
 
-    def get_complete(self, complete):
+    @staticmethod
+    def get_complete(complete):
         if complete is not None:
             return {"complete": complete}
 

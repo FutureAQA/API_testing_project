@@ -1,13 +1,13 @@
 import logging
 import os
 from logging.handlers import RotatingFileHandler
-from pages.base_page import BasePage
+from pages.folder_management import FolderManagement
 
 
 def create_logs_dir():
-    base = BasePage()
+    folder_management = FolderManagement()
     file_name = f"""logs.log"""
-    project_dir = base.get_root_path()
+    project_dir = folder_management.get_root_path()
     log_dir = os.path.join(project_dir, "log_files")
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)

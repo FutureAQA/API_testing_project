@@ -18,5 +18,16 @@ class TestCreateStore:
         """
         This test checks if response has status code 200
         """
-        response = self.store_page.create_store_with_valid_data()
+        data = self.store_page.prepare_store_data()
+        response = self.store_page.create_store_with_given_data(data=data)
         self.assertions.assert_status_code(response, self.status_code.STATUS_OK)
+
+    @allure.title("Create store response is JSON")
+    @allure.severity(allure.severity_level.CRITICAL)
+    def test_create_store_response_is_json(self):
+        """
+        This test checks if response is JSON
+        """
+        data = self.store_page.prepare_store_data()
+        response = self.store_page.create_store_with_given_data(data=data)
+        self.assertions.assert_response_has_be_json(response)

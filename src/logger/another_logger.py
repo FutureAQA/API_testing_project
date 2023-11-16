@@ -1,13 +1,13 @@
 import datetime
 import os
 from requests import Response
-from pages.base_page import BasePage
+from pages.folder_management import FolderManagement
 
 
 class Logger:
-    base = BasePage()
+    folder_management = FolderManagement()
     file_name = f"""log_{str(datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))}.log"""
-    project_dir = base.get_root_path()
+    project_dir = folder_management.get_root_path()
     log_dir = os.path.join(project_dir, "logs")
 
     log_file = os.path.join(log_dir, file_name)

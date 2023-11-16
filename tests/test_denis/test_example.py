@@ -10,9 +10,15 @@ class TestGetPets:
     request = MyRequests()
 
     def test_example(self):
-        pet_id = 100
-        url = f"/pet/{pet_id}"
-        response = self.request.get(url=url)
-        logger.error(response.json())
+        import requests
+
+        url = "https://indonesia-latest-weather-and-earthquake.p.rapidapi.com/feelbylocal_top15_earthquake"
+
+        headers = {
+            "X-RapidAPI-Key": "7b963c3402msh55aa1b07ce9e0c8p134ed4jsne1af87f84354",
+            "X-RapidAPI-Host": "indonesia-latest-weather-and-earthquake.p.rapidapi.com"
+        }
+
+        response = requests.get(url, headers=headers)
+
         print(response.json())
-        # self.assertions.assert_status_code(response, 200)
