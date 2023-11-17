@@ -3,7 +3,6 @@ import allure
 from pages.base_page import BasePage
 from src.logger.logger import get_logs
 
-
 logger = get_logs(r"pages\store_page_denis\store_page_denis.py")
 
 
