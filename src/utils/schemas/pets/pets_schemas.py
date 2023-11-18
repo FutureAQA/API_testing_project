@@ -4,11 +4,9 @@ This module contains the schemas for the Pets API
 
 from typing import Optional
 import validators
-from requests import Response
-
 from src.logger.logger import get_logs
 from src.utils.schemas.basic_validator import BasicValidator
-from pydantic import BaseModel, ValidationError, field_validator
+from pydantic import BaseModel, field_validator
 
 
 logger = get_logs(r"src\utils\schemas\pets\pet_schemas")
@@ -59,36 +57,3 @@ class Pets(BaseModel):
         return v
 
 
-class PetValidator:
-
-    @staticmethod
-    def validate_pet_response(response: Response):
-        data = response.text
-        try:
-            pets = Pets.model_validate_json(data)
-            if pets.model_dump()["category"] is None:
-                print(pets.model_dump(exclude_unset=True))
-                return True
-            else:
-                print(pets.model_dump())
-                return True
-
-        except ValidationError as e:
-            print(e.json())
-            logger.error(f"Invalid data format {e.json()}")
-
-
-
-# try:
-#     pets = Pets.model_validate_json(data)
-#     if pets.model_dump()["category"] is None:
-#         print(pets.model_dump(exclude_unset=True))
-#     else:
-#         print(pets.model_dump())
-#
-# except ValidationError as e:
-#     print("Error")
-#     print(e.json())
-
-# "https://hello.com",
-# "https://world.ru"

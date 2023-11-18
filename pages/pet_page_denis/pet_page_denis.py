@@ -1,5 +1,9 @@
-import allure
+"""
+This module contains PetPage class and all its locators and methods
+"""
 
+
+import allure
 from pages.base_page import BasePage
 from src.logger.logger import get_logs
 
@@ -12,7 +16,7 @@ class PetPage(BasePage):
     def create_pet_with_given_data(self, data):
         """
         This method creates a pet with given data and validates response
-        :param data:
+        :param data: data
         :return: response
         """
         url = self.urls.PET_URL

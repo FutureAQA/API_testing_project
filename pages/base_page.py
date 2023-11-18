@@ -1,3 +1,7 @@
+"""
+This module contains the BasePage class and its methods
+"""
+
 import allure
 from data.urls import Urls
 from pages.create_pet import CreatePet

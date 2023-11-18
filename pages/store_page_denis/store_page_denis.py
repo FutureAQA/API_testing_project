@@ -1,5 +1,8 @@
-import allure
+"""
+This file contains StorePage class and all its methods
+"""
 
+import allure
 from pages.base_page import BasePage
 from src.logger.logger import get_logs
 
@@ -11,7 +14,7 @@ class StorePage(BasePage):
     def create_store_with_given_data(self, data):
         """
         This method creates a store with given data and validates response
-        :param data:
+        :param data: data
         :return: response
         """
         url = self.urls.STORES_URL

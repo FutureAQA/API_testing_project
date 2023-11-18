@@ -1,3 +1,7 @@
+"""
+This module is responsible for logging
+"""
+
 import logging
 import os
 from logging.handlers import RotatingFileHandler
@@ -5,6 +9,10 @@ from pages.folder_management import FolderManagement
 
 
 def create_logs_dir():
+    """
+    This method creates a path to the log file
+    :return: path to the log file
+    """
     folder_management = FolderManagement()
     file_name = f"""logs.log"""
     project_dir = folder_management.get_root_path()
@@ -16,6 +24,11 @@ def create_logs_dir():
 
 
 def get_logs(name):
+    """
+    This method creates a logger
+    :param name: name for the log name
+    :return: logger
+    """
     log_file = create_logs_dir()
     max_byte = 1 * 1024 * 1024
     logger = logging.getLogger(name)

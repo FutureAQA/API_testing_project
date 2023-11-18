@@ -1,10 +1,12 @@
+"""
+This file contains a class TestCreateStore with tests for checking the creation of a store
+"""
+
 from pages.store_page_denis.store_page_denis import StorePage
 from src.utils.assertions import Assertion
 from data.status_code import StatusCode
 import allure
 
-
-# @pysnooper.snoop()
 
 @allure.epic("Testing Create a Store")
 class TestCreateStore:

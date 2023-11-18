@@ -1,3 +1,7 @@
+"""
+his module contains the schemas for the Store API
+"""
+
 import re
 from enum import Enum
 from typing import Optional
