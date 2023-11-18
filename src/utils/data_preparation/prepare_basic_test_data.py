@@ -1,5 +1,5 @@
 import allure
-from generator.generator import generated_pet, generated_store
+from generator.generator import generated_pet, generated_store, generated_pet_tags_and_category
 
 
 class BaseTestData:
@@ -10,8 +10,7 @@ class BaseTestData:
         This method generates pet data and returns it
         :return: pet data
         """
-        pet = next(generated_pet())
-        return pet
+        return next(generated_pet())
 
     @allure.step("Get all store data")
     def get_all_store_data(self):
@@ -19,12 +18,18 @@ class BaseTestData:
         This method generates store data and returns it
         :return: store data
         """
-        store = next(generated_store())
-        return store
+        return next(generated_store())
+
+    @allure.step("Get pet category and tags name")
+    def get_category_and_tags_name(self):
+        """
+        This method generates pet category and tags name and returns it
+        :return:
+        """
+        return next(generated_pet_tags_and_category())
 
     def get_id(self, uid):
         if uid is None:
             pet = self.get_all_pet_data()
             return pet.uid
         return uid
-

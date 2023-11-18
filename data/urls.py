@@ -1,3 +1,6 @@
+"""
+This file contains all the URLs
+"""
 
 
 class Urls:

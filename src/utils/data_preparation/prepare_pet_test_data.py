@@ -38,3 +38,15 @@ class PreparePetData(BaseTestData):
             pet = self.get_all_pet_data()
             return pet.status
         return status
+
+    def create_category_name(self, name=None):
+        if name is None:
+            name = self.get_category_and_tags_name()
+            return name.category_name
+        return name
+
+    def create_tags_name(self, name=None):
+        if name is None:
+            name = self.get_category_and_tags_name()
+            return name.tags_name
+        return name

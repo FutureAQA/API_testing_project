@@ -1,3 +1,9 @@
+"""
+This file defines a set of data classes representing entities related to a store and pets.
+Each data class is annotated using the dataclass decorator from the dataclasses module,
+providing a concise way to define classes for storing data
+"""
+
 from dataclasses import dataclass
 
 
@@ -22,3 +28,9 @@ class Pet(BaseData):
     photo_urls: str = None,
     tags: dict = None,
     status: str = None
+
+
+@dataclass
+class PetCategoryAndTagsName(BaseData):
+    category_name: str = None,
+    tags_name: str = None
