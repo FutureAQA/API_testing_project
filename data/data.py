@@ -31,6 +31,17 @@ class Pet(BaseData):
 
 
 @dataclass
+class User(BaseData):
+    user_name: str = None,
+    first_name: str = None,
+    last_name: str = None,
+    email: str = None,
+    password: str = None,
+    phone: str = None,
+    user_status: int = None
+
+
+@dataclass
 class PetCategoryAndTagsName(BaseData):
     category_name: str = None,
     tags_name: str = None

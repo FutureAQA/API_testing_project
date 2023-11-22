@@ -2,7 +2,7 @@
 This file is used to generate fake data
 """
 import random
-from data.data import Store, Pet, PetCategoryAndTagsName
+from data.data import Store, Pet, PetCategoryAndTagsName, User
 from faker import Faker
 from data.pet_data import PetName, PetBread
 
@@ -71,6 +71,71 @@ def generated_pet():
         photo_urls=faker_en.image_url(),
         tags={"id": get_random_int(), "name": faker_en.word()},
         status=get_status_pet()
+    )
+
+
+def get_phone_number():
+    """
+    This method returns a phone_number
+    :return: phone number
+    """
+    return faker_en.phone_number()
+
+
+def get_password():
+    """
+    This method returns a generated password
+    :return: pass
+    """
+    return faker_en.password()
+
+
+def get_email():
+    """
+    This method returns a generated e-mail
+    :return: email
+    """
+    return faker_en.email()
+
+
+def get_last_name():
+    """
+    This method returns a last_name
+    :return: last name
+    """
+    return faker_en.last_name()
+
+
+def get_first_name():
+    """
+    This method returns a first_name
+    :return: first name
+    """
+    return faker_en.first_name()
+
+
+def get_user_name():
+    """
+    This method returns a user_name
+    :return: username
+    """
+    return faker_en.user_name()
+
+
+def generated_user():
+    """
+    This method returns a user
+    :return: data of User class
+    """
+    yield User(
+        uid=get_random_int(),
+        user_name=get_user_name(),
+        first_name=get_first_name(),
+        last_name=get_last_name(),
+        email=get_email(),
+        password=get_password(),
+        phone=get_phone_number(),
+        user_status=get_random_int()
     )
 
 

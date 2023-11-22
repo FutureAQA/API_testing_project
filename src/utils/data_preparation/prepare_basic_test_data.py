@@ -1,5 +1,5 @@
 import allure
-from generator.generator import generated_pet, generated_store, generated_pet_tags_and_category
+from generator.generator import generated_pet, generated_store, generated_pet_tags_and_category, generated_user
 
 
 class BaseTestData:
@@ -19,6 +19,14 @@ class BaseTestData:
         :return: store data
         """
         return next(generated_store())
+
+    @allure.step("Get all user data")
+    def get_all_user_data(self):
+        """
+        This method generates user data and returns it
+        :return: user data
+        """
+        return next(generated_user())
 
     @allure.step("Get pet category and tags name")
     def get_category_and_tags_name(self):

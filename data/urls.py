@@ -8,3 +8,4 @@ class Urls:
     STORES_URL = "store/order/"
     STORE_INVENTORY_URL = "store/inventory/"
     PET_URL = "pet/"
+    USER_URL = "user/"

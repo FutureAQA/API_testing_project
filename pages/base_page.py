@@ -8,10 +8,12 @@ from pages.create_pet import CreatePet
 from pages.create_store import CreateStore
 from src.utils.data_preparation.prepare_pet_test_data import PreparePetData
 from src.utils.data_preparation.prepare_store_test_data import PrepareStoreData
+from src.utils.data_preparation.prepare_user_test_data import PrepareUserData
 from src.utils.http_methods import MyRequests
 from src.utils.schemas.store.store_validator import StoreValidator
 from src.utils.schemas.pets.pet_validator import PetValidator
 from generator.generator import generate_fake_dict
+from src.utils.schemas.users.user_validator import UserValidator
 
 
 class BasePage:
@@ -21,6 +23,7 @@ class BasePage:
     store = PrepareStoreData()
     create_pet = CreatePet()
     pet = PreparePetData()
+    user = PrepareUserData()
 
     @allure.step("Prepare store data using the provided data")
     def prepare_store_data(self, uid=None, pet_id=None, quantity=None, ship_date=None,
@@ -43,6 +46,35 @@ class BasePage:
             "shipDate": self.store.create_ship_date(ship_date=ship_date),
             "status": self.store.create_status(status=status),
             "complete": self.store.create_complete(complete=complete)
+        }
+        if key is not None:
+            data.pop(key, None)
+        return data
+
+    def prepare_user_data(self, uid=None, user_name=None, first_name=None, last_name=None, password=None, email=None,
+                          phone=None, user_status=None, key=None):
+        """
+        This method prepares user data using the provided data
+        :param key: if the value is not None, then the key equal to the value of key is removed from the dictionary
+        :param password: passed as a parameter to the create_password method
+        :param uid: passed as a parameter to the get_id method
+        :param user_name: passed as a parameter to the create_username method
+        :param first_name: passed as a parameter to the create_first_name method
+        :param last_name: passed as a parameter to the create_last_name method
+        :param email: passed as a parameter to the create_email method
+        :param phone: passed as a parameter to the create_phone method
+        :param user_status: passed as a parameter to the create_user_status method
+        :return: prepared data
+        """
+        data = {
+            "id": self.user.get_id(uid=uid),
+            "username": self.user.create_username(user_name=user_name),
+            "firstName": self.user.create_first_name(first_name=first_name),
+            "lastName": self.user.create_last_name(last_name=last_name),
+            "email": self.user.create_email(email=email),
+            "password": self.user.create_password(password=password),
+            "phone": self.user.create_phone(phone=phone),
+            "userStatus": self.user.create_user_status(user_status=user_status)
         }
         if key is not None:
             data.pop(key, None)
@@ -144,3 +176,15 @@ class BasePage:
             return response
         else:
             return PetValidator.validate_pet_response(response=response)
+
+    @allure.step("Verify that the request or response body conforms to the expected JSON schema")
+    def validate_response_user(self, response):
+        """
+        This method verifies that the request or response body conforms to the expected JSON schema
+        :param response: response_body
+        :return: response if response is valid or validation error message
+        """
+        if UserValidator.validate_user_response(response=response) is True:
+            return response
+        else:
+            return UserValidator.validate_user_response(response=response)

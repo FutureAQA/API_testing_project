@@ -31,12 +31,12 @@ class TestGetPets:
     # @pytest.mark.parametrize("item", ['id', 'petId', 'quantity', 'shipDate', 'status', 'complete'])
     def test_example1(self):
         url = "https://petstore3.swagger.io/api/v3/store/order/"
-        dict_data = self.store_page.prepare_store_data()
+        dict_data = self.store_page.prepare_store_data(ship_date="sdgsdgsd")
         print()
         print(dict_data)
-        # response = requests.post(url=url, json=data)
-        # print(response.json())
-        # print(response.status_code)
+        response = requests.post(url=url, json=dict_data)
+        print(response.json())
+        print(response.status_code)
 
     def test_example2(self):
         url = "https://petstore3.swagger.io/api/v3/pet/"

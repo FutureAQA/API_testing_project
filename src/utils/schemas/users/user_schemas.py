@@ -27,23 +27,3 @@ class User(BaseModel):
             raise ValueError("Invalid email address")
         return v
 
-
-data = """  {
-    "id": 10,
-    "username": "theUser",
-    "firstName": "John",
-    "lastName": "James",
-    "email": "john@email.com",
-    "password": "12345",
-    "phone": "12345",
-    "userStatus": 1
-  }"""
-
-try:
-    user = User.model_validate_json(data)
-    user.model_dump()
-    print("hhhh")
-
-except ValidationError as e:
-    print("Error")
-    print(e.json())
