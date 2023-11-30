@@ -5,14 +5,14 @@ from data.data_kate.data_kate import PetUrl
 from src.utils.http_methods import MyRequests
 import allure
 from pprint import pprint
-from tests.test_kate.assertions import Assertion
+from tests.test_kate.assertions import MyAssertion
 from data.data_kate.data_kate import StatusCode
 
 
 
 @allure.epic("Test get pets")
 class TestsGetPets:
-    assertion = Assertion()
+    assertion = MyAssertion()
     status_code = StatusCode()
     url = PetUrl
 
