@@ -25,7 +25,7 @@ class MyAssertion:
 
     def assert_keys_in_response(self, item_list, keys_to_check):
         for item in item_list:
-            self.assert_user_keys_in_response(item, keys_to_check)
+            self.assert_dicts_values_matches(item, keys_to_check)
 
     def assert_keys_in_dict(self, user_data: dict, keys_to_check: list):
         for key in keys_to_check:

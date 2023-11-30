@@ -5,6 +5,10 @@ class AllData:
     PETS_STATUS = ['available', 'pending', 'sold']
     USER_KEYS_TO_CHECK = ['id', 'username', 'firstName', 'lastName', 'email', 'password', 'phone', 'userStatus']
     PET_KEYS_TO_CHECK = ['id', 'tag', 'category', 'name']
+    PETS_REQUIRED_KEYS = ['id', 'name', 'status']
+    PET_OPTIONAL_KEYS = ['category', 'photoUrls', 'tags']
+
+
 
 
 class PetUrl:
