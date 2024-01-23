@@ -1,0 +1,1 @@
+ERROR :: 2023-10-18 00:52:40 :: {'code': 1, 'type': 'error', 'message': 'Pet not found'} :: [file:tests/test_denis/test_example :: line:16]
